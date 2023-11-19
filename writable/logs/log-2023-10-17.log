@@ -1,0 +1,11 @@
+CRITICAL - 2023-10-17 04:57:55 --> Invalid file: "pages/login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/login.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/login', [], true)
+ 3 APPPATH\Controllers\Pages.php(35): view('pages/login')
+ 4 APPPATH\Controllers\Pages.php(103): App\Controllers\Pages->halamanLogin('login')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')

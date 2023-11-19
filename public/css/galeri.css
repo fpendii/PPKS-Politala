@@ -1,0 +1,44 @@
+.container-galeri {
+    width: 350px;
+    height: 400px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    float: left;
+}
+
+.photo {
+    width: 330px;
+    height: 380px;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+
+.container-photo{
+    width: 20%;
+    height: 200px;
+    background-color: red;
+    margin: 20px;
+    float: left;
+}
+
+.col-photo {
+    margin: 5px;
+    transition: all 0.5s;
+    background-color: white;
+}
+
+.col-photo:hover{
+    transform: translateY(-2px);
+    transform: scale(1.1);
+    border-radius: 3px;
+}
+
+.min-with{
+    min-width: 300px;
+}
+
+.clear-float{
+    clear: both;
+}
+

@@ -1,0 +1,488 @@
+ERROR - 2023-11-17 03:22:47 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\PBL S3\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\PBL S3\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ppks', 3306, '', 0)
+#1 C:\xampp\htdocs\PBL S3\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\PBL S3\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\PBL S3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\PBL S3\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PBL S3\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\PBL S3\app\Controllers\Galeri.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(919): App\Controllers\Galeri->galeri()
+#8 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Galeri))
+#9 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\PBL S3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\PBL S3\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\PBL S3\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\PBL S3\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\PBL S3\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\PBL S3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\PBL S3\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\PBL S3\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\PBL S3\app\Controllers\Galeri.php(19): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(919): App\Controllers\Galeri->galeri()
+#7 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Galeri))
+#8 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\PBL S3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\PBL S3\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-11-17 03:22:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `galeri`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Galeri.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Galeri->galeri()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Galeri))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 03:35:42 --> Undefined variable: alamat
+in APPPATH\Views\layout\footer.php on line 10.
+ 1 APPPATH\Views\layout\footer.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: alamat', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\layout\\footer.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\layout\\footer.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('layout/footer', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(32): view('layout/footer')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 03:37:05 --> Undefined property: App\Controllers\Profil::$alamat
+in APPPATH\Controllers\Profil.php on line 28.
+ 1 APPPATH\Controllers\Profil.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Profil::$alamat', 'C:\\xampp\\htdocs\\PBL S3\\app\\Controllers\\Profil.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Profil->pengantar()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 03:37:34 --> Undefined index: gambar
+in APPPATH\Views\pages\User\beranda.php on line 71.
+ 1 APPPATH\Views\pages\User\beranda.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: gambar', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php', 71, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(35): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 03:39:27 --> Undefined index: gambar
+in APPPATH\Views\pages\User\beranda.php on line 71.
+ 1 APPPATH\Views\pages\User\beranda.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: gambar', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php', 71, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(34): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 07:47:54 --> Illegal string offset 'gambar'
+in APPPATH\Views\pages\User\beranda.php on line 73.
+ 1 APPPATH\Views\pages\User\beranda.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'gambar\'', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php', 73, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(35): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 07:48:18 --> Illegal string offset 'gambar'
+in APPPATH\Views\pages\User\beranda.php on line 73.
+ 1 APPPATH\Views\pages\User\beranda.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'gambar\'', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php', 73, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(34): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 07:51:14 --> Illegal string offset 'gambar'
+in APPPATH\Views\pages\User\beranda.php on line 73.
+ 1 APPPATH\Views\pages\User\beranda.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'gambar\'', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php', 73, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(34): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 07:51:29 --> Illegal string offset 'gambar'
+in APPPATH\Views\pages\User\beranda.php on line 73.
+ 1 APPPATH\Views\pages\User\beranda.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'gambar\'', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php', 73, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(34): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 07:51:39 --> Illegal string offset 'gambar'
+in APPPATH\Views\pages\User\beranda.php on line 73.
+ 1 APPPATH\Views\pages\User\beranda.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'gambar\'', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php', 73, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(34): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 07:52:27 --> Undefined variable: rowGaleri
+in APPPATH\Views\pages\User\beranda.php on line 72.
+ 1 APPPATH\Views\pages\User\beranda.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: rowGaleri', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php', 72, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(34): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 07:52:43 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pages\User\beranda.php on line 72.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 4 APPPATH\Controllers\BerandaController.php(34): view('pages/User/beranda')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 07:53:28 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pages\User\beranda.php on line 72.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 4 APPPATH\Controllers\BerandaController.php(34): view('pages/User/beranda')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 08:20:05 --> Call to undefined method App\Models\ProfilModel::getRandomArtikel
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\BerandaController.php(26): CodeIgniter\Model->__call('getRandomArtikel', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 08:22:19 --> Trying to get property 'judul' of non-object
+in APPPATH\Views\pages\User\beranda.php on line 55.
+ 1 APPPATH\Views\pages\User\beranda.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'judul\' of non-object', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(36): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 08:23:02 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pages\User\beranda.php on line 55.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 4 APPPATH\Controllers\BerandaController.php(36): view('pages/User/beranda')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 08:23:21 --> Array to string conversion
+in APPPATH\Views\pages\User\beranda.php on line 55.
+ 1 APPPATH\Views\pages\User\beranda.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(36): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 08:23:30 --> Trying to get property 'judul' of non-object
+in APPPATH\Views\pages\User\beranda.php on line 55.
+ 1 APPPATH\Views\pages\User\beranda.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'judul\' of non-object', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(36): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 08:24:34 --> Trying to get property 'judul' of non-object
+in APPPATH\Views\pages\User\beranda.php on line 55.
+ 1 APPPATH\Views\pages\User\beranda.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'judul\' of non-object', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(36): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 08:26:31 --> Trying to get property 'judul' of non-object
+in APPPATH\Views\pages\User\beranda.php on line 55.
+ 1 APPPATH\Views\pages\User\beranda.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'judul\' of non-object', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(36): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 08:27:03 --> Trying to get property 'judul' of non-object
+in APPPATH\Views\pages\User\beranda.php on line 55.
+ 1 APPPATH\Views\pages\User\beranda.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'judul\' of non-object', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(36): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 08:29:06 --> Trying to get property 'judul' of non-object
+in APPPATH\Views\pages\User\beranda.php on line 55.
+ 1 APPPATH\Views\pages\User\beranda.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'judul\' of non-object', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(36): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 08:44:31 --> Call to undefined method App\Models\ArtikelModel::getJudulLimit
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\BerandaController.php(27): CodeIgniter\Model->__call('getJudulLimit', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+ERROR - 2023-11-17 12:11:13 --> mysqli_sql_exception: Unknown column 'id_pengaduan' in 'field list' in C:\xampp\htdocs\PBL S3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\PBL S3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_peng...', 0)
+#1 C:\xampp\htdocs\PBL S3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_peng...')
+#2 C:\xampp\htdocs\PBL S3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_peng...')
+#3 C:\xampp\htdocs\PBL S3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_peng...', Array, false)
+#4 C:\xampp\htdocs\PBL S3\app\Models\PengaduanModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PBL S3\app\Controllers\BerandaController.php(30): App\Models\PengaduanModel->getIdPengaduan()
+#6 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+#7 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+#8 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\PBL S3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\PBL S3\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-11-17 12:11:13 --> Unknown column 'id_pengaduan' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_pengaduan`
+FROM `pengaduan`', [], false)
+ 2 APPPATH\Models\PengaduanModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\BerandaController.php(30): App\Models\PengaduanModel->getIdPengaduan()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 12:39:48 --> Undefined variable: galeri
+in APPPATH\Views\pages\User\galeri-photo.php on line 9.
+ 1 APPPATH\Views\pages\User\galeri-photo.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: galeri', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\galeri-photo.php', 9, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\galeri-photo.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/galeri-photo', [], true)
+ 5 APPPATH\Controllers\ProgramController.php(24): view('pages/User/galeri-photo')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProgramController->program()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+ERROR - 2023-11-17 12:47:25 --> mysqli_sql_exception: Table 'ppks.program' doesn't exist in C:\xampp\htdocs\PBL S3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\PBL S3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\PBL S3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\PBL S3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\PBL S3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\PBL S3\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PBL S3\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\PBL S3\app\Controllers\ProgramController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(919): App\Controllers\ProgramController->program()
+#8 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramController))
+#9 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\PBL S3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\PBL S3\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-11-17 12:47:25 --> Table 'ppks.program' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `program`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\ProgramController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProgramController->program()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 13:15:32 --> Undefined index: 
+in APPPATH\Views\pages\User\program.php on line 11.
+ 1 APPPATH\Views\pages\User\program.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\program.php', 11, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\program.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/program', [], true)
+ 5 APPPATH\Controllers\ProgramController.php(30): view('pages/User/program')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProgramController->program()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProgramController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 14:16:16 --> Call to undefined method App\Models\ProfilModel::getJumlahProgram
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\BerandaController.php(34): CodeIgniter\Model->__call('getJumlahProgram', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+ERROR - 2023-11-17 14:16:43 --> mysqli_sql_exception: Unknown column 'id_pengaduan' in 'field list' in C:\xampp\htdocs\PBL S3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\PBL S3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_peng...', 0)
+#1 C:\xampp\htdocs\PBL S3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_peng...')
+#2 C:\xampp\htdocs\PBL S3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_peng...')
+#3 C:\xampp\htdocs\PBL S3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_peng...', Array, false)
+#4 C:\xampp\htdocs\PBL S3\app\Models\ProgramModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PBL S3\app\Controllers\BerandaController.php(34): App\Models\ProgramModel->getJumlahProgram()
+#6 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+#7 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+#8 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\PBL S3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\PBL S3\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-11-17 14:16:43 --> Unknown column 'id_pengaduan' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_pengaduan`
+FROM `artikel`', [], false)
+ 2 APPPATH\Models\ProgramModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\BerandaController.php(34): App\Models\ProgramModel->getJumlahProgram()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+ERROR - 2023-11-17 14:17:32 --> mysqli_sql_exception: Unknown column 'id_program' in 'field list' in C:\xampp\htdocs\PBL S3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\PBL S3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_prog...', 0)
+#1 C:\xampp\htdocs\PBL S3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_prog...')
+#2 C:\xampp\htdocs\PBL S3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_prog...')
+#3 C:\xampp\htdocs\PBL S3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_prog...', Array, false)
+#4 C:\xampp\htdocs\PBL S3\app\Models\ProgramModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PBL S3\app\Controllers\BerandaController.php(34): App\Models\ProgramModel->getJumlahProgram()
+#6 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+#7 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+#8 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\PBL S3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\PBL S3\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-11-17 14:17:32 --> Unknown column 'id_program' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_program`
+FROM `artikel`', [], false)
+ 2 APPPATH\Models\ProgramModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\BerandaController.php(34): App\Models\ProgramModel->getJumlahProgram()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-17 14:26:10 --> Undefined variable: total_program
+in APPPATH\Views\pages\User\beranda.php on line 81.
+ 1 APPPATH\Views\pages\User\beranda.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: total_program', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php', 81, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(49): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+ERROR - 2023-11-17 23:36:30 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\PBL S3\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\PBL S3\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ppks', 3306, '', 0)
+#1 C:\xampp\htdocs\PBL S3\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\PBL S3\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\PBL S3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\PBL S3\app\Models\GaleriModel.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\PBL S3\app\Controllers\BerandaController.php(30): App\Models\GaleriModel->GetDataGaleriRandom()
+#6 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+#7 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+#8 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\PBL S3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\PBL S3\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\PBL S3\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\PBL S3\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\PBL S3\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\PBL S3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\PBL S3\app\Models\GaleriModel.php(46): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\PBL S3\app\Controllers\BerandaController.php(30): App\Models\GaleriModel->GetDataGaleriRandom()
+#5 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+#6 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+#7 C:\xampp\htdocs\PBL S3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\PBL S3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\PBL S3\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-11-17 23:36:30 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `galeri`
+ORDER BY RAND()
+ LIMIT 3', [], false)
+ 3 APPPATH\Models\GaleriModel.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\BerandaController.php(30): App\Models\GaleriModel->GetDataGaleriRandom()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')

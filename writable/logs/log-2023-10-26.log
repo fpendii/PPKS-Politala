@@ -1,0 +1,22 @@
+CRITICAL - 2023-10-26 02:39:09 --> Invalid file: "pages/pegawai/ManajementGaleri.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/pegawai/ManajementGaleri.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/pegawai/ManajementGaleri', [], true)
+ 3 APPPATH\Controllers\Pages.php(29): view('pages/pegawai/ManajementGaleri')
+ 4 APPPATH\Controllers\Pages.php(134): App\Controllers\Pages->tampilkanHalaman('Galeri', 'ManajementGaleri', 'Galeri', 'pegawai')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->galeriPegawai()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-10-26 02:41:44 --> Invalid file: "pages/Pegawai/ManajementGaleri.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/Pegawai/ManajementGaleri.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/Pegawai/ManajementGaleri', [], true)
+ 3 APPPATH\Controllers\Pages.php(29): view('pages/Pegawai/ManajementGaleri')
+ 4 APPPATH\Controllers\Pages.php(133): App\Controllers\Pages->tampilkanHalaman('Galeri', 'ManajementGaleri', 'Galeri', 'Pegawai')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->galeriPegawai()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')

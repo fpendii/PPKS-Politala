@@ -1,0 +1,11 @@
+.buttonArtikel{
+    border: none;
+}
+
+.Artikel{
+    transition: all 0.5s;
+}
+
+.Artikel:hover{
+    transform: translateY(-4px);
+}

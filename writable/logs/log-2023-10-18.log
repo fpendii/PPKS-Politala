@@ -1,0 +1,75 @@
+CRITICAL - 2023-10-18 01:14:56 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\pages\User\login.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-18 01:16:16 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\pages\User\login.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-18 01:33:44 --> Too few arguments to function App\Controllers\Pages::halamanLogin(), 0 passed in C:\xampp\htdocs\PBL S3\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Pages.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->halamanLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-10-18 03:32:59 --> Invalid file: "pages/admin/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/admin/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/admin/dashboard', [], true)
+ 3 APPPATH\Controllers\Pages.php(27): view('pages/admin/dashboard')
+ 4 APPPATH\Controllers\Pages.php(99): App\Controllers\Pages->tampilkanHalaman('PPKS POLITALA', 'dashboard', 'Dashboard', 'admin')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->mPengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-10-18 12:45:18 --> Undefined variable: judul
+in APPPATH\Views\layout\header-admin.php on line 7.
+ 1 APPPATH\Views\layout\header-admin.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: judul', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\layout\\header-admin.php', 7, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\layout\\header-admin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('layout/header-admin', [], true)
+ 5 APPPATH\Controllers\Pages.php(113): view('layout/header-admin')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->mProfil()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-10-18 12:48:07 --> Undefined variable: profil
+in APPPATH\Views\pages\Admin\ManajementProfil.php on line 37.
+ 1 APPPATH\Views\pages\Admin\ManajementProfil.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: profil', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\Admin\\ManajementProfil.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\Admin\\ManajementProfil.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/admin/ManajementProfil', [], true)
+ 5 APPPATH\Controllers\Pages.php(27): view('pages/admin/ManajementProfil')
+ 6 APPPATH\Controllers\Pages.php(113): App\Controllers\Pages->tampilkanHalaman('Profil', 'ManajementProfil', 'Profil', 'admin')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->mProfil()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-10-18 12:48:29 --> Undefined variable: visi
+in APPPATH\Views\pages\Admin\ManajementProfil.php on line 37.
+ 1 APPPATH\Views\pages\Admin\ManajementProfil.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: visi', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\Admin\\ManajementProfil.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\Admin\\ManajementProfil.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/admin/ManajementProfil', [], true)
+ 5 APPPATH\Controllers\Pages.php(27): view('pages/admin/ManajementProfil')
+ 6 APPPATH\Controllers\Pages.php(113): App\Controllers\Pages->tampilkanHalaman('Profil', 'ManajementProfil', 'Profil', 'admin')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->mProfil()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-10-18 12:49:42 --> Undefined variable: visi
+in APPPATH\Views\pages\Admin\ManajementProfil.php on line 37.
+ 1 APPPATH\Views\pages\Admin\ManajementProfil.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: visi', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\Admin\\ManajementProfil.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\Admin\\ManajementProfil.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/admin/ManajementProfil', [], true)
+ 5 APPPATH\Controllers\Pages.php(27): view('pages/admin/ManajementProfil')
+ 6 APPPATH\Controllers\Pages.php(113): App\Controllers\Pages->tampilkanHalaman('Profil', 'ManajementProfil', 'Profil', 'admin')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->mProfil()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')

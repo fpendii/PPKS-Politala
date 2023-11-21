@@ -34,4 +34,16 @@ class ManajementGaleri extends BaseController
         echo view("pages/Admin/ManajementGaleri", $data);
         echo view('layout/footer');
     }
+
+    public function SimpanGaleri(){
+
+        $this->DataGaleri->save([
+            'judul' => $this->request->getVar('judul'),
+            'gambar' => $this->request->getVar('gambar')
+        ]);
+
+        session()->setFlashdata('pesan','Data berhasil ditambahkan');
+
+        return redirect()->to('/manajement galeri');
+    }
 }

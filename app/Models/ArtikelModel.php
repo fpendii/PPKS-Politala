@@ -13,13 +13,13 @@ class ArtikelModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['judul','isi_artikel','gambar'];
 
     // Dates
     protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
+    protected $createdField  = 'tanggal_dibuat';
+    protected $updatedField  = 'tanggal_diperbarui';
     protected $deletedField  = 'deleted_at';
 
     // Validation

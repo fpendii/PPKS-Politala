@@ -8,7 +8,7 @@ class ArtikelModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'artikel';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'id_artikel';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;

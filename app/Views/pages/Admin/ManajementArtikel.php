@@ -27,9 +27,14 @@
                 <p class="card-text"><?php echo substr($rowArtikel['isi_artikel'], 0, 200) . "..." ?></p>
                 <p style="font-size: 13px;"><?php echo $rowArtikel['tanggal_dibuat'] ?></p>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $rowArtikel['id_artikel'] ?>">
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $rowArtikel['id_artikel'] ?>">
                     Detail
                 </button>
+                <form action="artikel/delete/<?php echo $rowArtikel['id_artikel'] ?>" method="post" class="d-inline">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-danger" onclick=" return confirm('Apakah anda yakin ingin menghapus data ini?')">Hapus</button>
+                </form>
+
 
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal<?php echo $rowArtikel['id_artikel'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -41,21 +46,24 @@
                             </div>
                             <div class="modal-body">
                                 <div class="card mb-3">
-                                    <img src="/img/bersama72.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title"><?php echo $rowArtikel['judul'] ?></h5>
+                                        <img src="/img/<?php echo $rowArtikel['gambar'] ?>" class="card-img-top" width="100px" alt="...">
                                         <p class="card-text"><?php echo $rowArtikel['isi_artikel'] ?></p>
                                         <p class="card-text"><small class="text-body-secondary"><?php echo $rowArtikel['tanggal_dibuat'] ?></small></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
+                                <form action="manajement-artikel/edit/<?php echo $rowArtikel['id_artikel'] ?>" method="post">
+                                <button type="submit" class="btn btn-warning">Edit</button>
+                                </form>
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="btn btn-danger">Hapus</a>
+
             </div>
         </div>
         <!-- </a> -->

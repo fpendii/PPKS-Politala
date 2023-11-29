@@ -33,7 +33,8 @@ class ManajementArtikel extends BaseController
         echo view('layout/footer');
     }
 
-    public function detailArtikel($id){
+    public function detailArtikel($id)
+    {
         $artikel = $this->DataArtikel->getArtikel($id);
         $alamat = $this->DataAlamat->findAll();
 
@@ -42,22 +43,46 @@ class ManajementArtikel extends BaseController
             'artikel' => $artikel,
             "alamat" => $alamat
         ];
-        
+
         echo view('layout/header-admin', $data);
         echo view("pages/User/detailArtikel", $data);
         echo view('layout/footer');
     }
 
-    public function TambahArtikel(){
+    public function TambahArtikel()
+    {
+        session();
         $data = [
-            'judul' => 'Form Tambah Artikel'
+            'judul' => 'Form Tambah Artikel',
+            'validation' => \Config\Services::validation()
         ];
 
         echo view('layout/header-admin', $data);
         echo view("pages/form/tambahArtikel");
     }
 
-    public function SimpanArtikel(){
+    // Function Untuk Menyimpan Artikel
+    public function SimpanArtikel()
+    {
+        // Rules Validasi Artikel
+        $validation_rules = $this->validate([
+            'judul' => [
+                'rules' => 'required',
+                'errors' =>  [
+                    'required' => '{field} harus di isi'
+                ]
+            ]
+        ]);
+
+        // Cek Apakah sesuai rules valitaion
+        if (!$validation_rules) {
+
+            $pesan_validation = \Config\Services::validation();
+
+            session()->setFlashdata('validation', $pesan_validation);
+
+            return redirect()->back()->withInput();
+        }
 
         $this->DataArtikel->save([
             'judul' => $this->request->getVar('judul'),
@@ -65,17 +90,46 @@ class ManajementArtikel extends BaseController
             'gambar' => $this->request->getVar('gambar')
         ]);
 
-        session()->setFlashdata('pesan','Data Berhasil Ditambahkan');
+        session()->setFlashdata('pesan', 'Data Berhasil Ditambahkan');
 
-        return redirect()->to('/manajement artikel');
+        return redirect()->to('/manajement-artikel');
     }
 
-    // public function uploadGambar(){
-    //     if($this->request->getFile('file')){
-    //         $dataFile = $this->request->getFile('file');
-    //         $fileName = $dataFile->getRandomName();
-    //         $dataFile->move("/img/", $fileName);
-    //         echo base_url("/img/$fileName");
-    //     }
-    // }
+    // Function untuk menghapus artikel
+    public function HapusArtikel($id)
+    {
+
+        $this->DataArtikel->delete($id);
+
+        session()->setFlashdata('pesan', 'Data Berhasil Dihapus');
+
+        return redirect()->back();
+    }
+
+    // Function untuk mengedit data arkel
+    public function EditArtikel($id)
+    {
+        $data = [
+            'judul' => 'Form Tambah Artikel',
+            'validation' => \Config\Services::validation(),
+            'artikel' => $this->DataArtikel->getArtikel($id)
+        ];
+
+        echo view('layout/header-admin', $data);
+        echo view("pages/form/editArtikel");
+    }
+
+    // Function untuk menyimpan hasil perubahan
+    public function UpdatedArtikel($id){
+        $this->DataArtikel->save([
+            'id_artikel' => $id,
+            'judul' => $this->request->getVar('judul'),
+            'isi_artikel' => $this->request->getVar('artikel'),
+            'gambar' => $this->request->getVar('gambar')
+        ]);
+
+        session()->setFlashdata('pesan', 'Data Berhasil Diubah');
+
+        return redirect()->to('/manajement-artikel');
+    }
 }

@@ -2,20 +2,36 @@
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/TambahArtikel.css">
 
+<?php 
+    // Mengambil Pesan Error Pada Validation dan dimasukkan ke variable $validation
+    if(session()->getFlashdata('validation')){
+        $validation = session()->getFlashdata('validation');
+    }
+?>
+
 <div class="container-fluid">
     <h2>Tambah Artikel</h2>
     <form action="simpan_artikel" method="post">
-    <?php echo csrf_field() ?>
+        <?php echo csrf_field() ?>
         <div class="row mb-3">
             <label for="judul" class="col-sm-2 col-form-label">Judul</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="judul" name="judul">
+                <input type="text" class="form-control <?php if ($validation) {
+                                                            if ($validation->hasError('judul')) {
+                                                                echo "is-invalid";
+                                                            }
+                                                        } ?>" id="judul" name="judul" value="<?php echo old('judul') ?>">
+                <div class="invalid-feedback">
+                    <?php 
+                        echo $validation->getError('judul');
+                    ?>
+                </div>
             </div>
         </div>
         <div class="row mb-3">
             <label for="gambar" class="col-sm-2 col-form-label">Gambar</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="gambar" name="gambar">
+                <input type="text" class="form-control" id="gambar" name="gambar" value="<?php echo old('gambar') ?>">
             </div>
         </div>
         <div class="form-floating">

@@ -8,17 +8,16 @@ class ProfilModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'profil';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'id_profil';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['visi','misi','tujuan'];
 
     // Dates
-    protected $useTimestamps = true;
+    protected $useTimestamps = false;
     protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
 

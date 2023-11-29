@@ -1,9 +1,13 @@
+
+
 @font-face {
   font-family: 'walkway';
   src: url('../font/walkway/Walkway UltraBold.ttf') format('truetype');
 }
 
-
+.display{
+  display: none;
+}
 
 .kotak-materi {
   background-color: #FFF2D8;

@@ -189,3 +189,125 @@ INFO - 2023-11-21 15:49:19 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-11-21 15:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-21 15:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-21 15:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-21 17:01:37 --> Illegal string offset 'no_handphone'
+in APPPATH\Views\layout\footer.php on line 10.
+ 1 APPPATH\Views\layout\footer.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'no_handphone\'', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\layout\\footer.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\layout\\footer.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('layout/footer', [], true)
+ 5 APPPATH\Controllers\Pages.php(146): view('layout/footer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->mAkun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-21 17:06:38 --> Illegal string offset 'no_handphone'
+in APPPATH\Views\layout\footer.php on line 10.
+ 1 APPPATH\Views\layout\footer.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'no_handphone\'', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\layout\\footer.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\layout\\footer.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('layout/footer', [], true)
+ 5 APPPATH\Controllers\Pages.php(146): view('layout/footer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->mAkun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-21 17:06:46 --> Illegal string offset 'no_handphone'
+in APPPATH\Views\layout\footer.php on line 10.
+ 1 APPPATH\Views\layout\footer.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'no_handphone\'', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\layout\\footer.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\layout\\footer.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('layout/footer', [], true)
+ 5 APPPATH\Controllers\Pages.php(146): view('layout/footer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->mAkun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-21 17:08:45 --> syntax error, unexpected '}', expecting ';' or ','
+in APPPATH\Controllers\ManajementAkun.php on line 24.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\PBL S3\\app\\Controllers\\ManajementAkun.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ManajementAkun')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ManajementAkun')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\ManajementAkun')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ManajementAkun', true)
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-21 17:08:53 --> Undefined variable: user
+in APPPATH\Views\pages\Admin\ManajementAkun.php on line 13.
+ 1 APPPATH\Views\pages\Admin\ManajementAkun.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\Admin\\ManajementAkun.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\Admin\\ManajementAkun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/Admin/ManajementAkun', [], true)
+ 5 APPPATH\Controllers\ManajementAkun.php(23): view('pages/Admin/ManajementAkun')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ManajementAkun->ManajementAkun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ManajementAkun))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-21 17:21:12 --> Undefined variable: judul
+in APPPATH\Views\layout\header-admin.php on line 7.
+ 1 APPPATH\Views\layout\header-admin.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: judul', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\layout\\header-admin.php', 7, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\layout\\header-admin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('layout/header-admin', [], true)
+ 5 APPPATH\Controllers\ManajementAkun.php(23): view('layout/header-admin')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ManajementAkun->ManajementAkun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ManajementAkun))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-21 17:26:21 --> Undefined index: username
+in APPPATH\Views\pages\Admin\ManajementAkun.php on line 26.
+ 1 APPPATH\Views\pages\Admin\ManajementAkun.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: username', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\Admin\\ManajementAkun.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\Admin\\ManajementAkun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/Admin/ManajementAkun', [], true)
+ 5 APPPATH\Controllers\ManajementAkun.php(29): view('pages/Admin/ManajementAkun')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ManajementAkun->ManajementAkun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ManajementAkun))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-21 17:26:45 --> Undefined index: level
+in APPPATH\Views\pages\Admin\ManajementAkun.php on line 26.
+ 1 APPPATH\Views\pages\Admin\ManajementAkun.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: level', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\Admin\\ManajementAkun.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\Admin\\ManajementAkun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/Admin/ManajementAkun', [], true)
+ 5 APPPATH\Controllers\ManajementAkun.php(29): view('pages/Admin/ManajementAkun')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ManajementAkun->ManajementAkun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ManajementAkun))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-21 17:27:06 --> Undefined index: level
+in APPPATH\Views\pages\Admin\ManajementAkun.php on line 26.
+ 1 APPPATH\Views\pages\Admin\ManajementAkun.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: level', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\Admin\\ManajementAkun.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\Admin\\ManajementAkun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/Admin/ManajementAkun', [], true)
+ 5 APPPATH\Controllers\ManajementAkun.php(29): view('pages/Admin/ManajementAkun', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ManajementAkun->ManajementAkun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ManajementAkun))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+CRITICAL - 2023-11-21 17:27:42 --> Undefined variable: aku
+in APPPATH\Views\pages\Admin\ManajementAkun.php on line 23.
+ 1 APPPATH\Views\pages\Admin\ManajementAkun.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: aku', 'C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\Admin\\ManajementAkun.php', 23, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\PBL S3\\app\\Views\\pages\\Admin\\ManajementAkun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/Admin/ManajementAkun', [], true)
+ 5 APPPATH\Controllers\ManajementAkun.php(29): view('pages/Admin/ManajementAkun', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ManajementAkun->ManajementAkun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ManajementAkun))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\PBL S3\\public\\index.php')
+INFO - 2023-11-21 22:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 23:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 23:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

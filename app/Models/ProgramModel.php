@@ -8,12 +8,12 @@ class ProgramModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'program';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'id_program';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['uraian','pelenggara','lokasi','waktu'];
 
     // Dates
     protected $useTimestamps = true;

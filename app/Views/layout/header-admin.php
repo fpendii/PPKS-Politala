@@ -21,26 +21,35 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="beranda admin">Beranda</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Manajement <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                             </svg>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="beranda admin">Beranda</a>
+                        <a class="nav-link" href="manajement-artikel">Artikel</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="manajement artikel">Artikel</a>
+                        <a class="nav-link" href="manajement-profil">Profil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="manajement profil">Profil</a>
+                        <a class="nav-link" href="manajement-galeri">Galeri</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="manajement galeri">Galeri</a>
+                        <a class="nav-link" href="manajement-materi">Materi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manajement-program">Program</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <button class="btn" type="submit">Account</button>
+                <form class="d-flex">
+                    <a href="manajement-akun" class="btn" type="submit">Account</a>
+                </form>
+                <form class="d-flex">
+                    <a href="manajement-akun" class="btn" type="submit">Logout</a>
                 </form>
             </div>
         </div>

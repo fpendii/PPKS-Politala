@@ -44,6 +44,15 @@ class ManajementGaleri extends BaseController
 
         session()->setFlashdata('pesan','Data berhasil ditambahkan');
 
-        return redirect()->to('/manajement galeri');
+        return redirect()->to('/manajement-galeri');
+    }
+
+    // Function untuk mengapus Data Galeri
+    public function HapusGaleri($id){
+        $this->DataGaleri->delete($id);
+
+        session()->setFlashdata('pesan','Data Berhasil Dihapus');
+
+        return redirect()->back();
     }
 }

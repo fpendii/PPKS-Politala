@@ -8,18 +8,18 @@ class UserModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'user';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'id_user';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['username','level','email','password'];
 
     // Dates
     protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'terakhir_aktif';
+    protected $createdField  = 'tanggal_dibuat';
+    protected $updatedField  = 'tanggal_dirubah';
     protected $deletedField  = 'deleted_at';
 
     // Validation

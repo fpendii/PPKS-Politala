@@ -38,7 +38,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                                <button type="type" class="btn btn-primary">Simpan</button>
+                                <button type="submit" class="btn btn-primary">Simpan</button>
                             </div>
                         </form>
                     </div>
@@ -53,7 +53,7 @@
             <?php endif; ?>
         </div>
     </div>
-    <table class="table">
+    <table class="table table-striped table-hover">
         <thead>
             <tr>
                 <th scope="col">Gambar</th>
@@ -65,18 +65,43 @@
         <tbody>
             <?php foreach ($galeri as $rowGaleri) : ?>
                 <tr>
-                    <td><img src="/img/<?php echo $rowGaleri['gambar'] ?>" style="width: 100px;" class="img-thumbnail" alt="<?php echo $rowGaleri['gambar'] ?>"></td>
+                    <td class="col-2"><img src="/img/<?php echo $rowGaleri['gambar'] ?>" style="width: 200px;" class="img-thumbnail" alt="<?php echo $rowGaleri['gambar'] ?>"></td>
                     <td><?php echo $rowGaleri['judul'] ?></td>
                     <td><?php echo $rowGaleri['tanggal_dibuat'] ?></td>
-                    <td style="width: 150px;">
-                        <button type="button" class="btn btn-primary me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                            </svg></button>
-                        <button type="button" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
-                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
-                            </svg></button>
+                    <td class="col-2">
+                        <button type="button" class="btn btn-info d-inline" data-bs-toggle="modal" data-bs-target="#ModalGaleri<?php echo $rowGaleri['id_galeri'] ?>">Detail</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="ModalGaleri<?php echo $rowGaleri['id_galeri'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body mx-auto">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="/img/<?php echo $rowGaleri['gambar'] ?>" class="card-img-top" alt="<?php echo $rowGaleri['judul'] ?>">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text"><?php echo $rowGaleri['judul'] ?></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><?php echo $rowGaleri['tanggal_dibuat'] ?></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="manajement-galeri/delete/<?php echo $rowGaleri['id_galeri'] ?>" method="post" class="d-inline">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button type="submit" class="btn btn-danger d-inline" onclick="return confirm('Apakah Anda Yakin Ingin Menghapus?')">Hapus</button>
+                        </form>
                     </td>
                 </tr>
             <?php endforeach; ?>

@@ -2,6 +2,7 @@
     <div class="container text-center">
         <div class="row align-items-center">
             <div class="col">
+                <img src="/img/illustrasi1.png" alt="illustrasi1.png" class="img-fluid">
             </div>
             <div class="col">
                 <h4>Komitmen Satgas PPKS Politala</h4>

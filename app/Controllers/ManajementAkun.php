@@ -32,6 +32,8 @@ class ManajementAkun extends BaseController
     }
 
     public function SimpanAkun(){
+
+        dd($this->request->getVar());
         
         $this->DataAkun->save([
             'username' => $this->request->getVar('username'),

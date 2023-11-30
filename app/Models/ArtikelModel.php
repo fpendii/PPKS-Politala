@@ -13,7 +13,7 @@ class ArtikelModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['judul','isi_artikel','gambar'];
+    protected $allowedFields    = ['judul', 'isi_artikel', 'gambar'];
 
     // Dates
     protected $useTimestamps = true;
@@ -39,20 +39,23 @@ class ArtikelModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    public function getArtikel($id = false){
-        if($id === false){
+    public function getArtikel($id = false)
+    {
+
+        if ($id === false) {
             return $this->findAll();
         }
+
         return $this->where(['id_artikel' => $id,])->first();
     }
 
-    public function getRandomArtikel(){
+    public function getRandomArtikel()
+    {
         $query =  $this->db->table('artikel')
             ->orderBy('RAND()')
             ->limit(1)
             ->get();
-        
+
         return $query->getRow();
     }
-
 }

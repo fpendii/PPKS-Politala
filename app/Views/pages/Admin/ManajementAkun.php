@@ -6,51 +6,35 @@
         <div class="card-body">
             <h5 class="card-title">Registrasi Akun</h5>
 
-            <button id="btnRegistrasi" type="submit" class="btn btn-primary" name="submit">
-                Registrasi
+            <button id="btnRegistrasi" type="submit" class="btn btn-success" name="submit">
+                Tambah Akun
             </button>
 
-
             <div class="container-fluid text-start display" id="form-registrasi">
-                <form class="row g-3">
+                <form action="/simpan-akun" method="post" class="row g-3">
                     <div class="col-md-6">
                         <label for="username" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="username">
+                        <input type="text" class="form-control" id="username" required name="username">
                     </div>
                     <div class="col-md-6">
                         <label for="password" class="form-label">Password</label>
-                        <input type="text" class="form-control" id="password">
+                        <input type="text" class="form-control" id="password" required name="password">
                     </div>
                     <div class="col-12">
                         <label for="email" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="email" placeholder="@gmail.com">
+                        <input type="text" class="form-control" id="email" placeholder="@gmail.com" required name="email">
                     </div>
-                    <div class="col-12">
-                        <label for="inputAddress2" class="form-label">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    <div class="col-md-7">
+                        <label for="no_handphone" class="form-label">No Handphone</label>
+                        <input type="text" class="form-control" id="no_handphone" required name="no_handphone"> 
                     </div>
-                    <div class="col-md-6">
-                        <label for="inputCity" class="form-label">City</label>
-                        <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="inputState" class="form-label">State</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Choose...</option>
-                            <option>...</option>
+                    <div class="col-md-5">
+                        <label for="inputState" class="form-label">Jabatan</label>
+                        <select id="inputState" class="form-select" required name="level">
+                            <option selected>Pilih...</option>
+                            <option>admin</option>
+                            <option>pegawai</option>
                         </select>
-                    </div>
-                    <div class="col-md-2">
-                        <label for="inputZip" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                    </div>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                                Check me out
-                            </label>
-                        </div>
                     </div>
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary">Sign in</button>

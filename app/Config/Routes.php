@@ -35,7 +35,8 @@ $routes->post('manajement-artikel/edit/(:num)','ManajementArtikel::EditArtikel/$
 $routes->post('manajement-artikel/edit/update/(:num)','ManajementArtikel::UpdatedArtikel/$1');
 // Admin/Manajement Profil
 $routes->get('/manajement-profil', 'ManajementProfil::ManajementProfil');
-$routes->post('manajement-profil/simpan-profil/(:num)', 'ManajementProfil::SimpanProfil/$1');
+$routes->get('/manajement-profil/edit/(:segment)','ManajementProfil::EditProfil/$1');
+$routes->post('manajement-profil/edit/simpan-profil/(:segment)', 'ManajementProfil::SimpanProfil/$1');
 // Admin/Manajament Galeri
 $routes->get('/manajement-galeri', 'ManajementGaleri::ManajementGaleri');
 $routes->post('/simpan-galeri', 'ManajementGaleri::SimpanGaleri');

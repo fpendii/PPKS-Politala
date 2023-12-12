@@ -13,7 +13,7 @@ class ProfilModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['visi','misi','tujuan'];
+    protected $allowedFields    = ['visi','misi','tujuan','alamat','no_handphone','email'];
 
     // Dates
     protected $useTimestamps = false;

@@ -67,7 +67,7 @@ class ManajementArtikel extends BaseController
         // Rules Validasi Artikel
         $validation_rules = $this->validate([
             'judul' => [
-                'rules' => 'required',
+                'rules' => 'required', 
                 'errors' =>  [
                     'required' => '{field} harus di isi'
                 ]

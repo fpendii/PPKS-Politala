@@ -10,13 +10,15 @@ class ManajementAkun extends BaseController
 {
     protected $DataAlamat;
     protected $DataAkun;
-    
-    public function __construct(){
+
+    public function __construct()
+    {
         $this->DataAlamat = new ProfilModel();
         $this->DataAkun = new UserModel();
     }
 
-    public function ManajementAkun(){
+    public function ManajementAkun()
+    {
         $alamat = $this->DataAlamat->findAll();
         $akun = $this->DataAkun->findAll();
 
@@ -25,16 +27,15 @@ class ManajementAkun extends BaseController
             'akun' => $akun,
             'alamat' => $alamat
         ];
-        
-        echo view('layout/header-admin',$data);
+
+        echo view('layout/header-admin', $data);
         echo view('pages/Admin/ManajementAkun', $data);
         echo view('layout/footer');
     }
 
-    public function SimpanAkun(){
+    public function SimpanAkun()
+    {
 
-        dd($this->request->getVar());
-        
         $this->DataAkun->save([
             'username' => $this->request->getVar('username'),
             'level' => $this->request->getVar('level'),
@@ -42,23 +43,25 @@ class ManajementAkun extends BaseController
             'password' => $this->request->getVar('password')
         ]);
 
-        session()->setFlashdata('pesan','Data Berhasil Ditambahkan');
+        session()->setFlashdata('pesan', 'Data Berhasil Ditambahkan');
 
         return redirect()->to('/manajement-akun');
     }
 
     // Function untuk menghapus akun
-    public function HapusAkun($id){
+    public function HapusAkun($id)
+    {
         $this->DataAkun->delete($id);
 
-        session()->setFlashdata('pesan','Data Berhasil Dihapus');
+        session()->setFlashdata('pesan', 'Data Berhasil Dihapus');
 
         return redirect()->back();
     }
 
     // Function untuk mengudpdate akun
-    public function UpdateAkun($id){
-        
+    public function UpdateAkun($id)
+    {
+
         $this->DataAkun->save([
             'id_user' => $id,
             'username' => $this->request->getVar('username'),
@@ -67,7 +70,7 @@ class ManajementAkun extends BaseController
             'password' => $this->request->getVar('password')
         ]);
 
-        session()->setFlashdata('pesan','Data Berhasil Diubah');
+        session()->setFlashdata('pesan', 'Data Berhasil Diubah');
 
         return redirect()->back();
     }

@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="/css/ArtikelStyle.css">
     
     <div class="container-fluid">
-        <ol class="list-group list-group-numbered">
+        <ol class="list-group list-group-numbered" style="witdh : 800px;">
             <?php foreach ($artikel as $RowArtikel) : ?>
                 <a href="/artikel/<?php echo $RowArtikel['id_artikel'] ?>">
                 <button class="buttonArtikel">

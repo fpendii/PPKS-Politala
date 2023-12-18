@@ -16,6 +16,7 @@ if (session()->getFlashdata('validation')) {
         <div class="row mb-3">
             <label for="judul" class="col-sm-2 col-form-label">Judul</label>
             <div class="col-sm-10">
+                <?php  ?>
                 <input type="text" class="form-control <?php if ($validation) {
                                                             if ($validation->hasError('judul')) {
                                                                 echo "is-invalid";

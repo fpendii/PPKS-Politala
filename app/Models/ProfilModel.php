@@ -22,8 +22,14 @@ class ProfilModel extends Model
     protected $deletedField  = 'deleted_at';
 
     // Validation
-    protected $validationRules      = [];
-    protected $validationMessages   = [];
+    protected $validationRules      = [
+        'no_handphone' => 'max_length[12]'
+    ];
+    protected $validationMessages   = [
+        'no_handphone' => [
+            'max_length' => 'Panjang No Handphone Maksimal 12'
+        ]
+    ];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
 

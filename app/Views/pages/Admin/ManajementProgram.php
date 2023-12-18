@@ -6,7 +6,7 @@
         <div class="card-body">
             <h5 class="card-title">Manajement Program</h5>
             <!-- Button Trigger Modal Tambah Program -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-succes" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Tambah Program
             </button>
 
@@ -92,7 +92,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <form action="manajement-artikel/edit/<?php echo $rowProgram['id_program'] ?>" method="post">
+                                <form action="manajement-program/edit/<?php echo $rowProgram['id_program'] ?>" method="post">
                                     <button type="submit" class="btn btn-warning">Edit</button>
                                 </form>
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

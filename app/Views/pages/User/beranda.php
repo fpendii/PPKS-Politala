@@ -29,15 +29,15 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col order-last">
-                    Gambar
+                    
                 </div>
                 <div class="col">
                     <div class="container text-center">
                         <div class="row">
-                            <div class="kotak-materi">Peraturan Perundang-Undangan dan Kebijakan Politala</div>
+                            <div class="kotak-materi"><?php echo $materi[0]['judul_materi'] ?></div>
                         </div>
                         <div class="row">
-                            <div class="kotak-materi">Materi Pelatihan</div>
+                            <div class="kotak-materi"><?php echo $materi[1]['judul_materi'] ?></div>
                         </div>
                     </div>
                 </div>

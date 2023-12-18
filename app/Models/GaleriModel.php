@@ -42,7 +42,7 @@ class GaleriModel extends Model
     public function GetDataGaleriRandom(){
         $query = $this->db->table('galeri')
             ->orderBy('RAND()')
-            ->limit(3)
+            ->limit(2)
             ->get();
 
             return $query->getRow();

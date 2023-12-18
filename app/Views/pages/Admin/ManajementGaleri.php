@@ -11,7 +11,7 @@
             <h5 class="card-title">Manajement Galeri</h5>
             <p class="card-text">Buatlah posting dengan galeri gambar untuk hari ini. Pastikan gambar yang diunggah relevan dan berkualitas. Terima kasih</p>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button" class="btn btn-succes" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Tambah
             </button>
 

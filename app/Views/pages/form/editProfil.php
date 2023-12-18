@@ -10,7 +10,14 @@
 </head>
 
 <body>
+
+
     <div class="container-fluid">
+        <?php if ($validasi = session()->getFlashdata('validasi')) : ?>
+            <div class="alert alert-danger" role="alert">
+                <?php echo implode($validasi) ?>
+            </div>
+        <?php endif; ?>
         <form action="simpan-profil/<?php echo $kategori ?>" method="post">
             <div class="form-floating mb-2">
                 <textarea class="form-control summernote" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="<?php echo $kategori ?>"><?php echo $profil ?></textarea>

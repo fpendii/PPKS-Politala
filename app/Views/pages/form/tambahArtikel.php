@@ -2,11 +2,11 @@
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/TambahArtikel.css">
 
-<?php 
-    // Mengambil Pesan Error Pada Validation dan dimasukkan ke variable $validation
-    if(session()->getFlashdata('validation')){
-        $validation = session()->getFlashdata('validation');
-    }
+<?php
+// Mengambil Pesan Error Pada Validation dan dimasukkan ke variable $validation
+if (session()->getFlashdata('validation')) {
+    $validation = session()->getFlashdata('validation');
+}
 ?>
 
 <div class="container-fluid">
@@ -22,8 +22,8 @@
                                                             }
                                                         } ?>" id="judul" name="judul" value="<?php echo old('judul') ?>">
                 <div class="invalid-feedback">
-                    <?php 
-                        echo $validation->getError('judul');
+                    <?php
+                    echo $validation->getError('judul');
                     ?>
                 </div>
             </div>
@@ -31,7 +31,9 @@
         <div class="row mb-3">
             <label for="gambar" class="col-sm-2 col-form-label">Gambar</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="gambar" name="gambar" value="<?php echo old('gambar') ?>">
+                <div class="input-group">
+                    <input type="file" class="form-control" id="gambar" aria-describedby="gambar" name="gambar" aria-label="Upload">
+                </div>
             </div>
         </div>
         <div class="form-floating">

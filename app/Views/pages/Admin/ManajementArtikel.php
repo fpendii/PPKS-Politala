@@ -55,8 +55,8 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <form action="manajement-artikel/edit/<?php echo $rowArtikel['id_artikel'] ?>" method="post">
-                                <button type="submit" class="btn btn-warning">Edit</button>
+                                <form action="manajement-artikel/edit/<?php echo $rowArtikel['id_artikel'] ?>" method="post" >
+                                    <button type="submit" class="btn btn-warning">Edit</button>
                                 </form>
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             </div>

@@ -46,4 +46,8 @@ class ProgramModel extends Model
         
         return count($query->getResult());
     }
+
+    public function getProgram($id){
+        return $this->where(['id_program' => $id])->first();
+    }
 }

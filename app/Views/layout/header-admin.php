@@ -49,7 +49,7 @@
                     <a href="manajement-akun" class="btn" type="submit">Account</a>
                 </form>
                 <form class="d-flex">
-                    <a href="manajement-akun" class="btn" type="submit">Logout</a>
+                    <a href="/logout" class="btn" type="submit">Logout</a>
                 </form>
             </div>
         </div>

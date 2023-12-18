@@ -52,6 +52,13 @@ class ManajementProfil extends BaseController
                 'alamat' => $this->request->getVar('alamat')
             ]);
         } elseif($kategori === 'no_handphone'){
+            $data = [
+                'no_handphone' => $this->request->getVar('no_handphone')
+            ];
+            if(!$this->DataProfil->validate($data)){
+                session()->setFlashdata('validasi',$this->DataProfil->errors());
+                return redirect()->to('/manajement-profil/edit/no_handphone');
+            }
             $this->DataProfil->save([
                 'id_profil' => 1,
                 'no_handphone' => $this->request->getVar('no_handphone')
@@ -66,15 +73,18 @@ class ManajementProfil extends BaseController
                 'id_profil' => 1,
                 'tujuan' => $this->request->getVar('tujuan')
             ]);
+        } elseif($kategori === 'visi'){
+            $this->DataProfil->save([
+                'id_profil' => 1,
+                'visi' => $this->request->getVar('visi')
+            ]);
+        } else {
+            $this->DataProfil->save([
+                'id_profil' => 1,
+                'misi' => $this->request->getVar('misi')
+            ]);
         }
-        // $this->DataProfil->save([
-        //     'id_profil' => 1,
-        //     'alamat' => $this->request->getVar('alamat'),
-        //     'tujuan' => $this->request->getVar('tujuan'),
-        //     'visi' => $this->request->getVar('visi'),
-        //     'misi' => $this->request->getVar('misi')
-        // ]);
-
+        
         session('pesan', 'Data Berhasil Dirubah');
 
         return redirect()->to('/manajement-profil');

@@ -13,13 +13,13 @@ class MateriModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['judul_materi','link_document','tanggal_dibuat'];
 
     // Dates
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
+    protected $createdField  = 'tanggal_dibuat';
+    protected $updatedField  = 'tanggal_diperbarui';
     protected $deletedField  = 'deleted_at';
 
     // Validation
@@ -38,4 +38,16 @@ class MateriModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function getMateri($id){
+        return $this->where(['id_materi' => $id])->first();
+    }
+
+    public function getRandomMateri(){
+        $query = $this->orderBy('RAND()')
+                    ->limit(2)
+                    ->get();
+
+        return $query->getResultArray();
+    }
 }

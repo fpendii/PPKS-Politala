@@ -23,7 +23,7 @@ class ManajementProgram extends BaseController
         $program = $this->DataProgram->findAll();
 
         $data = [
-            "judul" => "Manajament Profil",
+            "judul" => "Manajament Program",
             "alamat" => $profil,
             'program' => $program
         ];
@@ -31,6 +31,16 @@ class ManajementProgram extends BaseController
         echo view('layout/header-admin', $data);
         echo view("pages/Admin/ManajementProgram", $data);
         echo view('layout/footer');
+    }
+
+    public function EditProgram($id){
+        dd($this->DataProgram->getProgram($id));
+        $data = [
+            'judul' => 'Edit Program'
+        ];
+
+        echo view('layout/header-admin',$data);
+        echo view('pages/form/editProgram');
     }
 
     public function DeleteProgram($id)

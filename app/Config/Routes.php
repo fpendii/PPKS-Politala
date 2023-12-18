@@ -8,6 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 
 // ROUTES User
 $routes->get('/', 'BerandaController::beranda');
+$routes->get('/beranda', 'BerandaController::beranda');
 $routes->get('/admin', 'Pages::mPengaduan');
 $routes->get('/artikel', 'Artikel::artikel');
 $routes->get('/artikel/(:segment)', 'Artikel::detailArtikel/$1');
@@ -20,10 +21,12 @@ $routes->get('/pengantar', 'Profil::pengantar');
 $routes->get('/struktur', 'Pages::strukturOrganisasi');
 $routes->get('/sop', 'Pages::sop');
 $routes->get('/login', 'Login::login');
+$routes->post('/login/verifikasi-login', 'Login::verifikasiLogin');
+$routes->get('/logout', 'Logout::logout');
 
 
 // ROUTES Admin
-$routes->get('/beranda admin', 'BerandaAdminController::BerandaAdmin');
+$routes->get('/beranda-admin', 'BerandaAdminController::BerandaAdmin');
 $routes->get('/manajement pengaduan', 'Pages::mPengaduan');
 // Admin/Manajement Artikel
 $routes->get('/manajement-artikel', 'ManajementArtikel::MajanementArtikel');
@@ -48,8 +51,14 @@ $routes->delete('manajement-akun/delete/(:num)','ManajementAkun::HapusAkun/$1');
 $routes->post('manajement-akun/simpan-akun/(:num)','ManajementAkun::UpdateAkun/$1');
 // Admin/Manajement Materi
 $routes->get('/manajement-materi','ManajementMateri::ManajementMateri');
+$routes->get('/manajement-materi/tambah-materi','ManajementMateri::TambahMateri');
+$routes->post('/manajement-materi/simpan-materi','ManajementMateri::SimpanMateri');
+$routes->post('/manajement-materi/edit-materi/(:num)','ManajementMateri::EditMateri/$1');
+$routes->post('/manajement-materi/update-materi/(:num)','ManajementMateri::UpdateMateri/$1');
+$routes->delete('/manajement-materi/delete-materi/(:num)','ManajementMateri::DeleteMateri/$1');
 // Admin/Manajement Program
 $routes->get('manajement-program','ManajementProgram::ManajementProgram');
+$routes->post('manajement-program/edit/(:num)', 'ManajementProgram::EditProgram/$1');
 $routes->delete('manajement-program/delete/(:num)','ManajementProgram::DeleteProgram/$1');
 
 

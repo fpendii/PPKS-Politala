@@ -5,18 +5,18 @@
 
 <div class="container-fluid">
     <h2>Edit Artikel</h2>
-    <form action="update/<?php echo $artikel['id_artikel'] ?>" method="post">
+    <form action="update/<?php echo $artikel['id_artikel'] ?>" method="post" enctype="multipart/form-data">
         <?php echo csrf_field() ?>
         <div class="row mb-3">
             <label for="judul" class="col-sm-2 col-form-label">Judul</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="judul" name="judul" value="<?php echo $artikel['judul'] ?>" required>
+                <input type="text" class="form-control" id="judul" name="judul" value="<?php echo $artikel['judul'] ?>">
             </div>
         </div>
         <div class="row mb-3">
-            <label for="gambar" class="col-sm-2 col-form-label">Gambar</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="gambar" name="gambar" value="<?php echo $artikel['gambar'] ?>">
+            <div class="mb-3">
+                <label for="gambar" class="form-label">Tambahkan Gambar</label>
+                <input class="form-control form-control-sm" id="gambar" name="gambar" type="file">
             </div>
         </div>
         <div class="form-floating">

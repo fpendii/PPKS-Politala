@@ -7,7 +7,8 @@ use App\Models\ProfilModel;
 use App\Models\ArtikelModel;
 use App\Models\GaleriModel;
 use App\Models\PengaduanModel;  
-use App\Models\ProgramModel;  
+use App\Models\ProgramModel;
+use App\Models\MateriModel;
 
 class BerandaController extends BaseController
 {   
@@ -16,6 +17,7 @@ class BerandaController extends BaseController
     protected $DataArtikel;
     protected $DataPengaduan;
     protected $DataProgram;
+    protected $DataMateri;
 
     public function __construct(){
         $this->DataGaleri = new GaleriModel();
@@ -23,6 +25,7 @@ class BerandaController extends BaseController
         $this->DataAlamat = new ProfilModel(); 
         $this->DataPengaduan = new PengaduanModel();
         $this->DataProgram = new ProgramModel();
+        $this->DataMateri = new MateriModel();
     }
 
     public function beranda()
@@ -32,8 +35,7 @@ class BerandaController extends BaseController
         $artikel = $this->DataArtikel->getRandomArtikel();
         $totalPengaduan = $this->DataPengaduan->getJumlahPengaduan();
         $totalProgram = $this->DataProgram->getJumlahProgram();
-
-
+        $materi = $this->DataMateri->getRandomMateri();
 
         $data = [
             'judul' => 'PPKS POLITALA',
@@ -41,7 +43,8 @@ class BerandaController extends BaseController
             'alamat' => $alamat,
             'artikel' => $artikel,
             'total_pengaduan' => $totalPengaduan,
-            'total_program' => $totalProgram
+            'total_program' => $totalProgram,
+            'materi' => $materi
         ];
 
 

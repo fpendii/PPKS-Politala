@@ -23,8 +23,14 @@ class ArtikelModel extends Model
     protected $deletedField  = 'deleted_at';
 
     // Validation
-    protected $validationRules      = [];
-    protected $validationMessages   = [];
+    protected $validationRules      = [
+        'judul' => 'required'
+    ];
+    protected $validationMessages   = [
+        'judul' => [
+            'required' => 'Kolom Judul Wajib Diisi'
+        ]
+    ];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
 

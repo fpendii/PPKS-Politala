@@ -18,8 +18,8 @@ class ProgramModel extends Model
     // Dates
     protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
+    protected $createdField  = 'tanggal_dibuat';
+    protected $updatedField  = 'tanggal_diubah';
     protected $deletedField  = 'deleted_at';
 
     // Validation

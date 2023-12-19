@@ -11,7 +11,7 @@
             <h5 class="card-title">Manajement Galeri</h5>
             <p class="card-text">Buatlah posting dengan galeri gambar untuk hari ini. Pastikan gambar yang diunggah relevan dan berkualitas. Terima kasih</p>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-succes" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Tambah
             </button>
 
@@ -76,15 +76,14 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Gambar</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body mx-auto">
                                         <div class="card" style="width: 18rem;">
                                             <img src="/img/<?php echo $rowGaleri['gambar'] ?>" class="card-img-top" alt="<?php echo $rowGaleri['judul'] ?>">
                                             <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text"><?php echo $rowGaleri['judul'] ?></p>
+                                                <h5 class="card-title"><?php echo $rowGaleri['judul'] ?></h5>
                                             </div>
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item"><?php echo $rowGaleri['tanggal_dibuat'] ?></li>

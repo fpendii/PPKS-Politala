@@ -108,3 +108,557 @@ INFO - 2023-12-18 00:32:16 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-12-18 00:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-18 00:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-18 00:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-18 13:08:33 --> Undefined array key 0
+in APPPATH\Views\pages\User\beranda.php on line 37.
+ 1 APPPATH\Views\pages\User\beranda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+INFO - 2023-12-18 13:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-18 13:08:54 --> Undefined array key 0
+in APPPATH\Views\pages\User\beranda.php on line 37.
+ 1 APPPATH\Views\pages\User\beranda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+CRITICAL - 2023-12-18 13:08:55 --> Undefined array key 0
+in APPPATH\Views\pages\User\beranda.php on line 37.
+ 1 APPPATH\Views\pages\User\beranda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+CRITICAL - 2023-12-18 13:09:37 --> Undefined array key "judul_materi"
+in APPPATH\Views\pages\User\beranda.php on line 37.
+ 1 APPPATH\Views\pages\User\beranda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "judul_materi"', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+CRITICAL - 2023-12-18 13:12:42 --> Undefined array key "judul_materi"
+in APPPATH\Views\pages\User\beranda.php on line 37.
+ 1 APPPATH\Views\pages\User\beranda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "judul_materi"', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+CRITICAL - 2023-12-18 13:12:52 --> Undefined array key "judul_materi"
+in APPPATH\Views\pages\User\beranda.php on line 37.
+ 1 APPPATH\Views\pages\User\beranda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "judul_materi"', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+CRITICAL - 2023-12-18 13:13:26 --> Undefined array key 0
+in APPPATH\Views\pages\User\beranda.php on line 37.
+ 1 APPPATH\Views\pages\User\beranda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+CRITICAL - 2023-12-18 13:13:28 --> Undefined array key 0
+in APPPATH\Views\pages\User\beranda.php on line 37.
+ 1 APPPATH\Views\pages\User\beranda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+CRITICAL - 2023-12-18 13:13:36 --> Undefined array key 0
+in APPPATH\Views\pages\User\beranda.php on line 37.
+ 1 APPPATH\Views\pages\User\beranda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+CRITICAL - 2023-12-18 13:13:36 --> Undefined array key 0
+in APPPATH\Views\pages\User\beranda.php on line 37.
+ 1 APPPATH\Views\pages\User\beranda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+CRITICAL - 2023-12-18 13:13:37 --> Undefined array key 0
+in APPPATH\Views\pages\User\beranda.php on line 37.
+ 1 APPPATH\Views\pages\User\beranda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+INFO - 2023-12-18 13:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-18 13:15:42 --> Undefined array key 0
+in APPPATH\Views\pages\User\beranda.php on line 37.
+ 1 APPPATH\Views\pages\User\beranda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+CRITICAL - 2023-12-18 13:15:44 --> Undefined array key 0
+in APPPATH\Views\pages\User\beranda.php on line 37.
+ 1 APPPATH\Views\pages\User\beranda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+CRITICAL - 2023-12-18 13:17:15 --> Undefined array key "judul_materi"
+in APPPATH\Views\pages\User\beranda.php on line 37.
+ 1 APPPATH\Views\pages\User\beranda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "judul_materi"', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+CRITICAL - 2023-12-18 13:17:17 --> Undefined array key "judul_materi"
+in APPPATH\Views\pages\User\beranda.php on line 37.
+ 1 APPPATH\Views\pages\User\beranda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "judul_materi"', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+CRITICAL - 2023-12-18 13:25:26 --> Undefined variable $mater
+in APPPATH\Views\pages\User\beranda.php on line 40.
+ 1 APPPATH\Views\pages\User\beranda.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mater', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 40)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+CRITICAL - 2023-12-18 13:25:27 --> Undefined variable $mater
+in APPPATH\Views\pages\User\beranda.php on line 40.
+ 1 APPPATH\Views\pages\User\beranda.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mater', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 40)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+CRITICAL - 2023-12-18 13:25:30 --> Undefined variable $mater
+in APPPATH\Views\pages\User\beranda.php on line 40.
+ 1 APPPATH\Views\pages\User\beranda.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mater', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php', 40)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\User\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/User/beranda', [], true)
+ 5 APPPATH\Controllers\BerandaController.php(52): view('pages/User/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+INFO - 2023-12-18 13:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:29:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 13:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-18 14:22:20 --> mysqli_sql_exception: Unknown column 'uraian' in 'field list' in C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\app\Controllers\ManajementProgram.php(55): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(919): App\Controllers\ManajementProgram->SimpanProgram()
+#10 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ManajementProgram))
+#11 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH...')
+#14 {main}
+CRITICAL - 2023-12-18 14:22:20 --> Unknown column 'uraian' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `program` (`uraian`, `lokasi`, `created_at`, `updated_at`) VALUES (:uraian:, :lokasi:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\ManajementProgram.php(55): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ManajementProgram->SimpanProgram()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ManajementProgram))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+ERROR - 2023-12-18 14:24:16 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\app\Controllers\ManajementProgram.php(54): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(919): App\Controllers\ManajementProgram->SimpanProgram()
+#10 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ManajementProgram))
+#11 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH...')
+#14 {main}
+CRITICAL - 2023-12-18 14:24:16 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `program` (`uraian`, `lokasi`, `created_at`, `updated_at`) VALUES (:uraian:, :lokasi:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\ManajementProgram.php(54): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ManajementProgram->SimpanProgram()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ManajementProgram))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+INFO - 2023-12-18 14:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-18 14:26:54 --> Undefined array key "urain"
+in APPPATH\Views\pages\Admin\ManajementProgram.php on line 29.
+ 1 APPPATH\Views\pages\Admin\ManajementProgram.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "urain"', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\Admin\\ManajementProgram.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\Admin\\ManajementProgram.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/Admin/ManajementProgram', [], true)
+ 5 APPPATH\Controllers\ManajementProgram.php(32): view('pages/Admin/ManajementProgram', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ManajementProgram->ManajementProgram()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ManajementProgram))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+INFO - 2023-12-18 14:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-18 14:27:12 --> Undefined array key "urain"
+in APPPATH\Views\pages\Admin\ManajementProgram.php on line 54.
+ 1 APPPATH\Views\pages\Admin\ManajementProgram.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "urain"', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\Admin\\ManajementProgram.php', 54)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\Admin\\ManajementProgram.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/Admin/ManajementProgram', [], true)
+ 5 APPPATH\Controllers\ManajementProgram.php(32): view('pages/Admin/ManajementProgram', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ManajementProgram->ManajementProgram()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ManajementProgram))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+INFO - 2023-12-18 14:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-18 14:57:04 --> Array to string conversion
+in APPPATH\Views\pages\form\tambahProgram.php on line 3.
+ 1 APPPATH\Views\pages\form\tambahProgram.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\form\\tambahProgram.php', 3)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\app\\Views\\pages\\form\\tambahProgram.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pages/form/tambahProgram', [], true)
+ 5 APPPATH\Controllers\ManajementProgram.php(44): view('pages/form/tambahProgram', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ManajementProgram->TambahProgram()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ManajementProgram))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+INFO - 2023-12-18 14:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 14:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:35:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 15:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

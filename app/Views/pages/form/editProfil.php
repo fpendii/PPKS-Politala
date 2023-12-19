@@ -13,11 +13,12 @@
 
 
     <div class="container-fluid">
-        <?php if ($validasi = session()->getFlashdata('validasi')) : ?>
+        <h1>Edit <?php echo $kategori ?></h1>
+        <?php if (session()->getFlashdata('errors')) : ?>
             <div class="alert alert-danger" role="alert">
-                <?php echo implode($validasi) ?>
+                <?php echo session()->getFlashdata('errors') ?>
             </div>
-        <?php endif; ?>
+        <?php endif ?>
         <form action="simpan-profil/<?php echo $kategori ?>" method="post">
             <div class="form-floating mb-2">
                 <textarea class="form-control summernote" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="<?php echo $kategori ?>"><?php echo $profil ?></textarea>
@@ -46,7 +47,7 @@
             ['para', ['ul', 'ol', 'paragraph']],
             ['table', ['table']],
             ['insert', ['link']],
-            ['view']
+            ['view', ['fullscreen', 'codeview', 'help']]
         ],
         callbacks: {
             onImageUpload: function(files) {

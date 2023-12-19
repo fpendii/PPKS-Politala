@@ -58,6 +58,8 @@ $routes->post('/manajement-materi/update-materi/(:num)','ManajementMateri::Updat
 $routes->delete('/manajement-materi/delete-materi/(:num)','ManajementMateri::DeleteMateri/$1');
 // Admin/Manajement Program
 $routes->get('manajement-program','ManajementProgram::ManajementProgram');
+$routes->get('manajement-program/tambah-program','ManajementProgram::TambahProgram');
+$routes->post('manajement-program/simpan-program', 'ManajementProgram::SimpanProgram');
 $routes->post('manajement-program/edit/(:num)', 'ManajementProgram::EditProgram/$1');
 $routes->delete('manajement-program/delete/(:num)','ManajementProgram::DeleteProgram/$1');
 

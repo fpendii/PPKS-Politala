@@ -2,31 +2,24 @@
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/TambahArtikel.css">
 
-<?php
-// Mengambil Pesan Error Pada Validation dan dimasukkan ke variable $validation
-if (session()->getFlashdata('validation')) {
-    $validation = session()->getFlashdata('validation');
-}
-?>
+
 
 <div class="container-fluid">
     <h2>Tambah Artikel</h2>
     <form action="simpan_artikel" method="post">
+
+        <?php if (session()->getFlashdata('errors')) : ?>
+            <div class="alert alert-danger" role="alert">
+                <?php echo session()->getFlashdata('errors') ?>
+            </div>
+        <?php endif; ?>
+
         <?php echo csrf_field() ?>
         <div class="row mb-3">
             <label for="judul" class="col-sm-2 col-form-label">Judul</label>
             <div class="col-sm-10">
                 <?php  ?>
-                <input type="text" class="form-control <?php if ($validation) {
-                                                            if ($validation->hasError('judul')) {
-                                                                echo "is-invalid";
-                                                            }
-                                                        } ?>" id="judul" name="judul" value="<?php echo old('judul') ?>">
-                <div class="invalid-feedback">
-                    <?php
-                    echo $validation->getError('judul');
-                    ?>
-                </div>
+                <input type="text" class="form-control " id="judul" name="judul" value="<?php echo old('judul') ?>">
             </div>
         </div>
         <div class="row mb-3">
@@ -38,9 +31,13 @@ if (session()->getFlashdata('validation')) {
             </div>
         </div>
         <div class="form-floating">
-            <textarea class="form-control summernote" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="artikel"></textarea>
+            <textarea class="form-control summernote" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="isi_artikel"><?php echo old('isi_artikel') ?></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Tambah</button>
+        <div class="mt-3">
+            <a class="btn btn-secondary">Batal</a>
+            <button type="submit" class="btn btn-primary">Tambah</button>
+        </div>
+
     </form>
 </div>
 

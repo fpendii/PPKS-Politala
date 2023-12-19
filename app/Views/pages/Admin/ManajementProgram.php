@@ -5,44 +5,11 @@
         </div>
         <div class="card-body">
             <h5 class="card-title">Manajement Program</h5>
-            <!-- Button Trigger Modal Tambah Program -->
-            <button type="button" class="btn btn-succes" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            
+            <a href="/manajement-program/tambah-program" class="btn btn-success">
                 Tambah Program
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade text-start" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </a>
+            
         </div>
         <div class="card-footer text-body-secondary">
             <?php if (session()->getFlashdata('pesan')) : ?>
@@ -59,7 +26,7 @@
                 Program
             </div>
             <div class="card-body">
-                <h5 class="card-title"><?php echo $rowProgram['urain'] ?></h5>
+                <h5 class="card-title"><?php echo $rowProgram['uraian'] ?></h5>
                 <p class="card-text"><?php echo substr($rowProgram['penyelenggara'], 0, 200) . "..." ?></p>
                 <p style="font-size: 13px;"><?php echo $rowProgram['lokasi'] ?></p>
                 <p style="font-size: 13px;"><?php echo $rowProgram['waktu'] ?></p>
@@ -84,7 +51,7 @@
                             <div class="modal-body">
                                 <div class="card mb-3">
                                     <div class="card-body">
-                                        <h5 class="card-title"><?php echo $rowProgram['urain'] ?></h5>
+                                        <h5 class="card-title"><?php echo $rowProgram['uraian'] ?></h5>
                                         <p class="card-text"><?php echo $rowProgram['penyelenggara'] ?></p>
                                         <p class="card-text"><small class="text-body-secondary"><?php echo $rowProgram['lokasi'] ?></small></p>
                                         <p class="card-text"><small class="text-body-secondary"><?php echo $rowProgram['waktu'] ?></small></p>

@@ -64,29 +64,15 @@ class ManajementArtikel extends BaseController
     // Function Untuk Menyimpan Artikel
     public function SimpanArtikel()
     {
-        // Rules Validasi Artikel
-        $validation_rules = $this->validate([
-            'judul' => [
-                'rules' => 'required', 
-                'errors' =>  [
-                    'required' => '{field} harus di isi'
-                ]
-            ]
-        ]);
-
-        // Cek Apakah sesuai rules valitaion
-        if (!$validation_rules) {
-
-            $pesan_validation = \Config\Services::validation();
-
-            session()->setFlashdata('validation', $pesan_validation);
-
+        // Cek Validasi
+        if(!$this->validate($this->DataArtikel->getValidationRules())){
+            session()->setFlashdata('errors',$this->validator->listErrors());
             return redirect()->back()->withInput();
         }
 
         $this->DataArtikel->save([
             'judul' => $this->request->getVar('judul'),
-            'isi_artikel' => $this->request->getVar('artikel'),
+            'isi_artikel' => $this->request->getVar('isi_artikel'),
             'gambar' => $this->request->getVar('gambar')
         ]);
 

@@ -23,12 +23,23 @@ class ProfilModel extends Model
 
     // Validation
     protected $validationRules      = [
-        'no_handphone' => 'max_length[12]'
+        'no_handphone' => [
+            'rules' => 'max_length[12]|numeric',
+            'errors' => [
+                'max_length' => 'No Handphone maksimal 12 *',
+                'numeric' => 'No Handphone hanya boleh berupa angka'
+            ]
+        ],
+        'alamat' => 'required',
+        'visi' => [
+            'rules' => 'required',
+            'errors' => [
+                'required' => 'Visi wajib diisi'
+            ]
+        ]
     ];
     protected $validationMessages   = [
-        'no_handphone' => [
-            'max_length' => 'Panjang No Handphone Maksimal 12'
-        ]
+        
     ];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;

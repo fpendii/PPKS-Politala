@@ -24,13 +24,20 @@ class ArtikelModel extends Model
 
     // Validation
     protected $validationRules      = [
-        'judul' => 'required'
+        'judul' =>[
+            'rules' => 'required',
+            'errors' => [
+                'required' => 'Judul wajib diisi'
+            ]
+        ],
+        'isi_artikel' =>[
+            'rules' => 'required',
+            'errors' => [
+                'required' => 'Isi artikel wajib diisi'
+            ]
+        ],
     ];
-    protected $validationMessages   = [
-        'judul' => [
-            'required' => 'Kolom Judul Wajib Diisi'
-        ]
-    ];
+    protected $validationMessages   = [];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
 

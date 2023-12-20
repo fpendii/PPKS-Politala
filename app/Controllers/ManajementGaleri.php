@@ -35,7 +35,22 @@ class ManajementGaleri extends BaseController
         echo view('layout/footer');
     }
 
+    public function TambahGambar(){
+        $data = [
+            'judul' => 'Tambah Gambar'
+        ];
+        echo view('layout/header-admin', $data);
+        echo view("pages/form/tambahGaleri", $data);
+        echo view('layout/script');
+    }
+
     public function SimpanGaleri(){
+
+        // Cek validasi
+        if(!$this->validate($this->DataGaleri->getValidationRules())){
+            session()->setFlashdata('errors' , $this->validator->listErrors());
+            return redirect()->to('/manajement-galeri/tambah-gambar')->withInput();
+        }
 
         $this->DataGaleri->save([
             'judul' => $this->request->getVar('judul'),

@@ -10,40 +10,9 @@
         <div class="card-body">
             <h5 class="card-title">Manajement Galeri</h5>
             <p class="card-text">Buatlah posting dengan galeri gambar untuk hari ini. Pastikan gambar yang diunggah relevan dan berkualitas. Terima kasih</p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <a href="/manajement-galeri/tambah-gambar" class="btn btn-success">
                 Tambah
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <form action="simpan-galeri" method="post">
-                            <?php echo csrf_field() ?>
-                            <div class="modal-body">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="inputGroup-sizing-default">judul</span>
-                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="judul">
-                                </div>
-                                <div class="input-group mb-3">
-                                    <input type="file" class="form-control" id="inputGroupFile02" name="gambar">
-                                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                                </div>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                                <button type="submit" class="btn btn-primary">Simpan</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+            </a>
         </div>
         <div class="card-footer text-body-secondary">
             <?php if (session()->getFlashdata('pesan')) : ?>

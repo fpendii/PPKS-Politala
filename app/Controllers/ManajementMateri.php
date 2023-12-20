@@ -44,6 +44,12 @@ class ManajementMateri extends BaseController
     }
 
     public function SimpanMateri(){
+        // Cek validasi
+        if(!$this->validate($this->DataMateri->getValidationRules())){
+            session()->setFlashdata('errors',$this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
+
         $judul_materi = $this->request->getVar('judul_materi');
         $link_document = $this->request->getVar('link_document');
 

@@ -23,7 +23,15 @@ class GaleriModel extends Model
     protected $deletedField  = 'deleted_at';
 
     // Validation
-    protected $validationRules      = [];
+    protected $validationRules      = [
+        'judul' => [
+            'rules' => 'required|max_length[20]',
+            'errors' => [
+                'required' => 'Judul Wajib Diisi',
+                'max_length' => 'Batas jumlah huruf dalam judul maksimal 20'
+            ]
+        ]
+    ];
     protected $validationMessages   = [];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;

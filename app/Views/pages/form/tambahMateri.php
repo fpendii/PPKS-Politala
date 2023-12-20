@@ -1,15 +1,30 @@
-<div class="container-fluid">
-    <h1>Tambah Materi</h1>
-    <form action="/manajement-materi/simpan-materi" method="post">
-        <div class="mb-3">
-            <label for="judul-materi" class="form-label">Judul Materi</label>
-            <input type="text" class="form-control" id="judul-materi" name="judul_materi" required>
+<div class="container-xxl p-2">
+    <div class=".container text-center">
+        <div class="row">
+            <div class="col-7 text-start ps-5">
+                <h1 class="fs-1">Tambah Materi</h1>
+                <?php if (session()->getFlashdata('errors')) : ?>
+                    <div class="alert alert-danger" role="alert">
+                        <?php echo session()->getFlashdata('errors') ?>
+                    </div>
+                <?php endif; ?>
+                <form action="/manajement-materi/simpan-materi" method="post">
+                    <div class="mb-3">
+                        <label for="judul_materi" class="form-label">Judul Materi</label>
+                        <input type="text" autofocus class="form-control" id="judul_materi" name="judul_materi" value="<?php echo old('judul') ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label for="link_document" class="form-label">Link Document</label>
+                        <input type="text" autofocus class="form-control" id="link_document" name="link_document" value="<?php echo old('judul') ?>">
+                    </div>
+                    <a href="/manajement-galeri" class="btn btn-secondary">Batal</a>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+                </form>
+            </div>
+            <div class="col">
+
+            </div>
+
         </div>
-        <div class="mb-3">
-            <label for="judul-materi" class="form-label">Link Materi</label>
-            <input type="text" class="form-control" id="judul-materi" name="link_document" required>
-        </div>
-        <a href="/manajement-materi" class="btn btn-secondary">Batal</a>
-        <button type="submit" class="btn btn-primary">Tambah</button>
-    </form>
+    </div>
 </div>

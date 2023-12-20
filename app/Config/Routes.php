@@ -42,7 +42,8 @@ $routes->get('/manajement-profil/edit/(:segment)','ManajementProfil::EditProfil/
 $routes->post('manajement-profil/edit/simpan-profil/(:segment)', 'ManajementProfil::SimpanProfil/$1');
 // Admin/Manajament Galeri
 $routes->get('/manajement-galeri', 'ManajementGaleri::ManajementGaleri');
-$routes->post('/simpan-galeri', 'ManajementGaleri::SimpanGaleri');
+$routes->get('/manajement-galeri/tambah-gambar', 'ManajementGaleri::TambahGambar');
+$routes->post('/manajement-galeri/simpan-gambar', 'ManajementGaleri::SimpanGaleri');
 $routes->delete('manajement-galeri/delete/(:num)','ManajementGaleri::HapusGaleri/$1');    
 // Admin/Manajement Akun
 $routes->get('/manajement-akun', 'ManajementAkun::ManajementAkun');

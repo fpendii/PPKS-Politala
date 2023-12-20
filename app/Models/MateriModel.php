@@ -23,7 +23,20 @@ class MateriModel extends Model
     protected $deletedField  = 'deleted_at';
 
     // Validation
-    protected $validationRules      = [];
+    protected $validationRules      = [
+        'judul_materi' => [
+            'rules' => 'required',
+            'errors' => [
+                'required' => 'Judul materi wajib diisi'
+            ]
+        ],
+        'link_document' => [
+            'rules' => 'required',
+            'errors' => [
+                'required' => 'Link document materi wajib diisi'
+            ]
+        ],
+    ];
     protected $validationMessages   = [];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;

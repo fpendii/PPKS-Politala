@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="beranda admin">Beranda</a>
+                        <a class="nav-link active" aria-current="page" href="beranda-admin">Beranda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Manajement <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
@@ -30,19 +30,19 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="manajement-artikel">Artikel</a>
+                        <a class="nav-link" href="<?= base_url('/manajement-artikel') ?>">Artikel</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="manajement-profil">Profil</a>
+                        <a class="nav-link" href="<?= base_url('/manajement-profil') ?>">Profil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="manajement-galeri">Galeri</a>
+                        <a class="nav-link" href="<?= base_url('/manajement-galeri') ?>">Galeri</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="manajement-materi">Materi</a>
+                        <a class="nav-link" href="<?= base_url('/manajement-materi') ?>">Materi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="manajement-program">Program</a>
+                        <a class="nav-link" href="<?= base_url('/manajement-program') ?>">Program</a>
                     </li>
                 </ul>
                 <form class="d-flex">

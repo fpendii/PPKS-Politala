@@ -45,18 +45,7 @@ class ManajementProgram extends BaseController
     }
 
     public function SimpanProgram()
-    {
-        // Validasi Input
-        if (!$this->validate([
-            '' => 'required'
-        ])) {
-            $validation = \Config\Services::validation();
-            $data = [
-                'judul' => 'Tambah Program',
-                'validation' => $validation
-            ];
-            return view('layout/header-admin', $data) . view("pages/form/tambahProgram", $data);
-        }
+    {   
 
         $uraian = $this->request->getVar('uraian');
         $penyelenggara = $this->request->getVar('penyelenggara');

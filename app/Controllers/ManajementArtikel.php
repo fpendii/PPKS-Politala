@@ -59,6 +59,7 @@ class ManajementArtikel extends BaseController
 
         echo view('layout/header-admin', $data);
         echo view("pages/form/tambahArtikel");
+        echo view('layout/script');
     }
 
     // Function Untuk Menyimpan Artikel
@@ -103,6 +104,7 @@ class ManajementArtikel extends BaseController
 
         echo view('layout/header-admin', $data);
         echo view("pages/form/editArtikel");
+        echo view('layout/script');
     }
 
     // Function untuk menyimpan hasil perubahan

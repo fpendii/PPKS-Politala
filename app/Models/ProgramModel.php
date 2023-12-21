@@ -13,7 +13,7 @@ class ProgramModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['uraian','pelenggara','lokasi','waktu'];
+    protected $allowedFields    = ['uraian', 'penyelenggara', 'lokasi', 'waktu'];
 
     // Dates
     protected $useTimestamps = true;
@@ -23,7 +23,26 @@ class ProgramModel extends Model
     protected $deletedField  = 'deleted_at';
 
     // Validation
-    protected $validationRules      = [];
+    protected $validationRules      = [
+        'uraian' => [
+            'rules' => 'required',
+            'errors' => [
+                'required' => 'Uraian program wajib diisi'
+            ]
+        ],
+        'penyelenggara' => [
+            'rules' => 'required',
+            'errors' => [
+                'required' => 'Penyelenggara wajib diisi'
+            ]
+        ],
+        'lokasi' => [
+            'rules' => 'required',
+            'errors' => [
+                'required' => 'Lokasi program wajib diisi'
+            ]
+        ]
+    ];
     protected $validationMessages   = [];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
@@ -39,15 +58,17 @@ class ProgramModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    public function getJumlahProgram(){
+    public function getJumlahProgram()
+    {
         $query = $this->db->table('program')
             ->select('id_program')
             ->get();
-        
+
         return count($query->getResult());
     }
 
-    public function getProgram($id){
+    public function getProgram($id)
+    {
         return $this->where(['id_program' => $id])->first();
     }
 }

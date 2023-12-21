@@ -344,3 +344,212 @@ INFO - 2023-12-20 16:27:18 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-12-20 16:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-20 16:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-20 16:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-20 17:57:24 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ppks', 3306, '', 0)
+#1 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\app\Models\GaleriModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\app\Controllers\BerandaController.php(33): App\Models\GaleriModel->GetDataGaleriRandom()
+#6 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+#7 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+#8 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\app\Models\GaleriModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\app\Controllers\BerandaController.php(33): App\Models\GaleriModel->GetDataGaleriRandom()
+#5 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+#6 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+#7 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH...')
+#10 {main}
+CRITICAL - 2023-12-20 17:57:24 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `galeri`
+ORDER BY RAND()
+ LIMIT 2', [], false)
+ 3 APPPATH\Models\GaleriModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\BerandaController.php(33): App\Models\GaleriModel->GetDataGaleriRandom()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+ERROR - 2023-12-20 17:57:29 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ppks', 3306, '', 0)
+#1 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\app\Models\GaleriModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\app\Controllers\BerandaController.php(33): App\Models\GaleriModel->GetDataGaleriRandom()
+#6 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+#7 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+#8 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\app\Models\GaleriModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\app\Controllers\BerandaController.php(33): App\Models\GaleriModel->GetDataGaleriRandom()
+#5 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+#6 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+#7 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH...')
+#10 {main}
+CRITICAL - 2023-12-20 17:57:29 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `galeri`
+ORDER BY RAND()
+ LIMIT 2', [], false)
+ 3 APPPATH\Models\GaleriModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\BerandaController.php(33): App\Models\GaleriModel->GetDataGaleriRandom()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+ERROR - 2023-12-20 17:59:07 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ppks', 3306, '', 0)
+#1 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\app\Models\GaleriModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\app\Controllers\BerandaController.php(33): App\Models\GaleriModel->GetDataGaleriRandom()
+#6 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+#7 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+#8 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\app\Models\GaleriModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\app\Controllers\BerandaController.php(33): App\Models\GaleriModel->GetDataGaleriRandom()
+#5 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+#6 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+#7 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH...')
+#10 {main}
+CRITICAL - 2023-12-20 17:59:07 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `galeri`
+ORDER BY RAND()
+ LIMIT 2', [], false)
+ 3 APPPATH\Models\GaleriModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\BerandaController.php(33): App\Models\GaleriModel->GetDataGaleriRandom()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BerandaController->beranda()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BerandaController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+INFO - 2023-12-20 17:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 17:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 17:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 17:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-20 18:15:42 --> CodeIgniter\HTTP\RedirectResponse::back(): Argument #1 ($code) must be of type ?int, string given, called in C:\Users\BATUAH.TECH\Documents\PBL S3\PPKS-Politala\app\Controllers\ManajementProgram.php on line 52
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 74.
+ 1 APPPATH\Controllers\ManajementProgram.php(52): CodeIgniter\HTTP\RedirectResponse->back('/manajement-program/tambah-program')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ManajementProgram->SimpanProgram()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ManajementProgram))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\BATUAH.TECH\\Documents\\PBL S3\\PPKS-Politala\\public\\index.php')
+INFO - 2023-12-20 18:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:17:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:17:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:22:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-20 18:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

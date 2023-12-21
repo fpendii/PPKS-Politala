@@ -62,6 +62,7 @@ $routes->get('manajement-program','ManajementProgram::ManajementProgram');
 $routes->get('manajement-program/tambah-program','ManajementProgram::TambahProgram');
 $routes->post('manajement-program/simpan-program', 'ManajementProgram::SimpanProgram');
 $routes->post('manajement-program/edit/(:num)', 'ManajementProgram::EditProgram/$1');
+$routes->post('manajement-program/update/(:num)', 'ManajementProgram::UpdateProgram/$1');
 $routes->delete('manajement-program/delete/(:num)','ManajementProgram::DeleteProgram/$1');
 
 

@@ -21,7 +21,7 @@ class ManajementProgram extends BaseController
     public function ManajementProgram()
     {
         $profil = $this->DataProfil->findAll();
-        $program = $this->DataProgram->findAll();
+        $program = $this->DataProgram->getProgramTerbaru();
 
         $data = [
             "judul" => "Manajament Program",
@@ -42,26 +42,21 @@ class ManajementProgram extends BaseController
         ];
         echo view('layout/header-admin', $data);
         echo view("pages/form/tambahProgram", $data);
+        echo view('layout/script');
     }
 
     public function SimpanProgram()
     {
-        // Validasi Input
-        if (!$this->validate([
-            '' => 'required'
-        ])) {
-            $validation = \Config\Services::validation();
-            $data = [
-                'judul' => 'Tambah Program',
-                'validation' => $validation
-            ];
-            return view('layout/header-admin', $data) . view("pages/form/tambahProgram", $data);
+        // Cek validasi
+        if(!$this->validate($this->DataProgram->getValidationRules())){
+            session()->setFlashdata('errors',$this->validator->listErrors());
+            return redirect()->to('/manajement-program/tambah-program')->withInput();
         }
 
         $uraian = $this->request->getVar('uraian');
         $penyelenggara = $this->request->getVar('penyelenggara');
         $lokasi = $this->request->getVar('lokasi');
-        $tanggal = $this->request->getVar('tanggal');
+        $tanggal = $this->request->getVar('waktu');
 
         $this->DataProgram->save([
             'uraian' => $uraian,
@@ -69,19 +64,39 @@ class ManajementProgram extends BaseController
             'lokasi' => $lokasi,
             'waktu' => $tanggal
         ]);
-
+        session()->setFlashdata('pesan','Data berhasil ditambah');
         return redirect()->to('/manajement-program');
     }
 
     public function EditProgram($id)
-    {
-        dd($this->DataProgram->getProgram($id));
+    {   
+        $program = $this->DataProgram->getProgram($id);
         $data = [
-            'judul' => 'Edit Program'
+            'judul' => 'Edit Program',
+            'program' => $program
         ];
 
         echo view('layout/header-admin', $data);
         echo view('pages/form/editProgram');
+    }
+
+    public function UpdateProgram($id){
+
+        $uraian = $this->request->getVar('uraian');
+        $penyelenggara = $this->request->getVar('penyelenggara');
+        $lokasi = $this->request->getVar('lokasi');
+        $tanggal = $this->request->getVar('waktu');
+
+        $this->DataProgram->save([
+            'id_program' => $id,
+            'uraian' => $uraian,
+            'penyelenggara' => $penyelenggara,
+            'lokasi' => $lokasi,
+            'waktu' => $tanggal
+        ]);
+
+        session()->setFlashdata('pesan','Data berhasil diubah');
+        return redirect()->to('/manajement-program');
     }
 
     public function DeleteProgram($id)

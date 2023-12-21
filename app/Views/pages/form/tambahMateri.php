@@ -4,8 +4,9 @@
             <div class="col-7 text-start ps-5">
                 <h1 class="fs-1">Tambah Materi</h1>
                 <?php if (session()->getFlashdata('errors')) : ?>
-                    <div class="alert alert-danger" role="alert">
-                        <?php echo session()->getFlashdata('errors') ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong><?php echo session()->getFlashdata('errors') ?></strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 <?php endif; ?>
                 <form action="/manajement-materi/simpan-materi" method="post">

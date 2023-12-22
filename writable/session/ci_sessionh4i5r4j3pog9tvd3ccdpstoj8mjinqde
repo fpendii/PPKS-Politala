@@ -1,0 +1,9 @@
+__ci_last_regenerate|i:1703206282;_ci_previous_url|s:37:"http://localhost:8080/manajement-akun";id_user|s:2:"20";username|s:5:"mimin";level|s:5:"admin";errors|s:244:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>No Handphone hanya boleh angka</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";__ci_vars|a:3:{s:6:"errors";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:5:{s:8:"username";s:5:"asdas";s:8:"password";s:3:"123";s:5:"email";s:25:"nurependi210203@gmail.com";s:12:"no_handphone";s:6:"sadasd";s:5:"level";s:5:"admin";}}_ci_validation_errors|a:1:{s:12:"no_handphone";s:30:"No Handphone hanya boleh angka";}

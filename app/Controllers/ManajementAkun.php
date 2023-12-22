@@ -35,12 +35,18 @@ class ManajementAkun extends BaseController
 
     public function SimpanAkun()
     {
+        // Cek Validasi
+        if (!$this->validate($this->DataAkun->getValidationRules())) {
+            session()->setFlashdata('errors', $this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
 
         $this->DataAkun->save([
             'username' => $this->request->getVar('username'),
             'level' => $this->request->getVar('level'),
             'email' => $this->request->getVar('email'),
-            'password' => $this->request->getVar('password')
+            'password' => $this->request->getVar('password'),
+            'no_handphone' => $this->request->getVar('no_handphone')
         ]);
 
         session()->setFlashdata('pesan', 'Data Berhasil Ditambahkan');
@@ -61,13 +67,19 @@ class ManajementAkun extends BaseController
     // Function untuk mengudpdate akun
     public function UpdateAkun($id)
     {
+        // Cek Validasi
+        if (!$this->validate($this->DataAkun->getValidationRules())) {
+            session()->setFlashdata('errors', $this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
 
         $this->DataAkun->save([
             'id_user' => $id,
             'username' => $this->request->getVar('username'),
             'level' => $this->request->getVar('level'),
             'email' => $this->request->getVar('email'),
-            'password' => $this->request->getVar('password')
+            'password' => $this->request->getVar('password'),
+            'no_handphone' => $this->request->getVar('no_handphone')
         ]);
 
         session()->setFlashdata('pesan', 'Data Berhasil Diubah');

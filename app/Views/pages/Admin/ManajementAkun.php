@@ -4,13 +4,14 @@
             Halaman
         </div>
         <div class="card-body">
-            <h5 class="card-title">Registrasi Akun</h5>
-
-            <button id="btnRegistrasi" type="submit" class="btn btn-success" name="submit">
-                Tambah Akun
-            </button>
-
-            <div class="container-fluid text-start display" id="form-registrasi">
+            <h5 class="card-titl">Registrasi Akun</h5>
+            <?php if (session()->getFlashdata('errors')) : ?>
+                <div class="alert alert-danger alert-dismissible fade show text-start" role="alert">
+                    <strong><?php echo session()->getFlashdata('errors') ?></strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <?php endif ?>
+            <div class="container-fluid text-start" id="form-registrasi">
                 <form action="/simpan-akun" method="post" class="row g-3">
                     <div class="col-md-6">
                         <label for="username" class="form-label">Username</label>
@@ -26,7 +27,7 @@
                     </div>
                     <div class="col-md-7">
                         <label for="no_handphone" class="form-label">No Handphone</label>
-                        <input type="text" class="form-control" id="no_handphone" required name="no_handphone"> 
+                        <input type="text" class="form-control" id="no_handphone" required name="no_handphone">
                     </div>
                     <div class="col-md-5">
                         <label for="inputState" class="form-label">Jabatan</label>
@@ -37,7 +38,7 @@
                         </select>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <button type="submit" class="btn btn-primary">Tambah</button>
                     </div>
                 </form>
             </div>
@@ -56,6 +57,7 @@
                     <th scope="col">No</th>
                     <th scope="col">Username</th>
                     <th scope="col">Email</th>
+                    <th scope="col">No Handphone</th>
                     <th scope="col">Jabatan</th>
                     <th scope="col">Action</th>
                 </tr>
@@ -67,6 +69,7 @@
                         <th scope="row"><?php echo $no++ ?></th>
                         <td><?php echo $rowAkun['username'] ?></td>
                         <td><?php echo $rowAkun['email'] ?></td>
+                        <td><?php echo $rowAkun['no_handphone'] ?></td>
                         <td><?php echo $rowAkun['level'] ?></td>
                         <td class="col-2">
                             <!-- Button trigger modal -->
@@ -96,6 +99,10 @@
                                         <div class="mb-3">
                                             <label for="exampleInputPassword1" class="form-label">Email</label>
                                             <input type="email" class="form-control" id="exampleInputPassword1" value="<?php echo $rowAkun['email'] ?>" name="email">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">No Handphone</label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1" value="<?php echo $rowAkun['no_handphone'] ?>" name="no_handphone">
                                         </div>
                                         <div class="mb-3">
                                             <select class="form-select" id="inputGroupSelect01" name="level">

@@ -14,6 +14,7 @@ class BerandaAdminController extends BaseController
     protected $DataPengaduan;
     protected $DataUser;
     protected $DataArtikel;
+    protected $filters = ['login'];
 
     public function __construct(){
         $this->DataAlamat = new ProfilModel();

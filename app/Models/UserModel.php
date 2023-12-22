@@ -13,7 +13,7 @@ class UserModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['username','level','email','password'];
+    protected $allowedFields    = ['username', 'level', 'email', 'password', 'no_handphone'];
 
     // Dates
     protected $useTimestamps = true;
@@ -23,7 +23,20 @@ class UserModel extends Model
     protected $deletedField  = 'deleted_at';
 
     // Validation
-    protected $validationRules      = [];
+    protected $validationRules      = [
+        'no_handphone' => [
+            'rules' => 'numeric',
+            'errors' => [
+                'numeric' => 'No Handphone hanya boleh angka'
+            ]
+        ],
+        'username' => [
+            'rules' => 'is_unique[user.username]',
+            'errors' => [
+                'is_unique' => 'Username tidak tersedia'
+            ]
+        ],
+    ];
     protected $validationMessages   = [];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
@@ -38,5 +51,4 @@ class UserModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
-
 }

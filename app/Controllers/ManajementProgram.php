@@ -82,6 +82,12 @@ class ManajementProgram extends BaseController
 
     public function UpdateProgram($id){
 
+        // Cek validasi
+        if(!$this->validate($this->DataProgram->getValidationRules())){
+            session()->setFlashdata('errors',$this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
+
         $uraian = $this->request->getVar('uraian');
         $penyelenggara = $this->request->getVar('penyelenggara');
         $lokasi = $this->request->getVar('lokasi');

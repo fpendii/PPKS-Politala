@@ -6,8 +6,8 @@
         <div class="card-body">
             <h5 class="card-title">Manajament Artikel</h5>
             <p class="card-text">Tulislah sebuah artikel yang informatif dan menarik untuk hari ini, berikan wawasan dan informasi yang bermanfaat kepada pembaca</p>
-            <a href="/tambah-artikel" class="btn btn-success">Tambah Artikel</a>
-        </div>
+            <a href="<?= base_url('/tambah-artikel') ?>" class="btn btn-success">Tambah Artikel</a>
+    </div>
         <div class="card-footer text-body-secondary">
             <?php if (session()->getFlashdata('pesan')) : ?>
                 <div class="alert alert-primary" role="alert">

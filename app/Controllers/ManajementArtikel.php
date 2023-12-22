@@ -65,8 +65,8 @@ class ManajementArtikel extends BaseController
     public function SimpanArtikel()
     {
         // Cek Validasi
-        if(!$this->validate($this->DataArtikel->getValidationRules())){
-            session()->setFlashdata('errors',$this->validator->listErrors());
+        if (!$this->validate($this->DataArtikel->getValidationRules())) {
+            session()->setFlashdata('errors', $this->validator->listErrors());
             return redirect()->back()->withInput();
         }
 
@@ -106,7 +106,13 @@ class ManajementArtikel extends BaseController
     }
 
     // Function untuk menyimpan hasil perubahan
-    public function UpdatedArtikel($id){
+    public function UpdatedArtikel($id)
+    {
+        // Cek Validasi
+        if (!$this->validate($this->DataArtikel->getValidationRules())) {
+            session()->setFlashdata('errors', $this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
         $this->DataArtikel->save([
             'id_artikel' => $id,
             'judul' => $this->request->getVar('judul'),

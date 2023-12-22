@@ -2,28 +2,50 @@
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/TambahArtikel.css">
 
+<div class="container-xxl p-2">
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col-7">
+                <h2>Edit Artikel</h2>
 
-<div class="container-fluid">
-    <h2>Edit Artikel</h2>
-    <form action="update/<?php echo $artikel['id_artikel'] ?>" method="post" enctype="multipart/form-data">
-        <?php echo csrf_field() ?>
-        <div class="row mb-3">
-            <label for="judul" class="col-sm-2 col-form-label">Judul</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="judul" name="judul" value="<?php echo $artikel['judul'] ?>">
+                <form action="<?= base_url('manajement-artikel/edit/update/'.$artikel['id_artikel']) ?>" method="post">
+
+                    <?php if (session()->getFlashdata('errors')) : ?>
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong><?php echo session()->getFlashdata('errors') ?></strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php echo csrf_field() ?>
+                    <div class="row mb-3">
+                        <label for="judul" class="col-sm-2 col-form-label">Judul</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control " id="judul" name="judul" value="<?php echo $artikel['judul'] ?>">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="gambar" class="col-sm-2 col-form-label">Gambar</label>
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="gambar" aria-describedby="gambar" name="gambar" aria-label="Upload" value="<?php echo $artikel['gambar'] ?>">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control summernote" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="isi_artikel"><?php echo $artikel['isi_artikel'] ?></textarea>
+                    </div>
+                    <div class="mt-3">
+                        <a href="/manajement-artikel" class="btn btn-secondary">Batal</a>
+                        <button type="submit" class="btn btn-primary">Simpan</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
             </div>
         </div>
-        <div class="row mb-3">
-            <div class="mb-3">
-                <label for="gambar" class="form-label">Tambahkan Gambar</label>
-                <input class="form-control form-control-sm" id="gambar" name="gambar" type="file">
-            </div>
-        </div>
-        <div class="form-floating">
-            <textarea class="form-control summernote" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="artikel"><?php echo $artikel['isi_artikel'] ?></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Simpan</button>
-    </form>
+    </div>
+
 </div>
 
 <!-- Link JS -->
@@ -41,7 +63,7 @@
             ['para', ['ul', 'ol', 'paragraph']],
             ['table', ['table']],
             ['insert', ['link']],
-            ['view']
+            ['view', ['fullscreen', 'codeview', 'help']]
         ],
         callbacks: {
             onImageUpload: function(files) {

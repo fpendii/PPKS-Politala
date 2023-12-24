@@ -1,0 +1,11 @@
+__ci_last_regenerate|i:1703377785;_ci_previous_url|s:36:"http://localhost:8080/tambah-artikel";username|s:8:"mimin 22";level|s:5:"admin";errors|s:314:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>Judul wajib diisi</li>
+					<li>Isi artikel wajib diisi</li>
+					<li>Yang anda pilih bukan gambar</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";__ci_vars|a:3:{s:6:"errors";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:3:{s:14:"csrf_test_name";s:32:"afcbe2ef40d987a6037e4fde882d9105";s:5:"judul";s:0:"";s:11:"isi_artikel";s:0:"";}}_ci_validation_errors|a:3:{s:5:"judul";s:17:"Judul wajib diisi";s:11:"isi_artikel";s:23:"Isi artikel wajib diisi";s:6:"gambar";s:28:"Yang anda pilih bukan gambar";}

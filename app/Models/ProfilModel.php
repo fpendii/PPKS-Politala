@@ -13,7 +13,7 @@ class ProfilModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['visi','misi','tujuan','alamat','no_handphone','email'];
+    protected $allowedFields    = ['visi','misi','tujuan','alamat','no_handphone','email','struktur_organisasi'];
 
     // Dates
     protected $useTimestamps = false;
@@ -30,7 +30,6 @@ class ProfilModel extends Model
                 'numeric' => 'No Handphone hanya boleh berupa angka'
             ]
         ],
-        'alamat' => 'required',
         'visi' => [
             'rules' => 'required',
             'errors' => [
@@ -55,14 +54,10 @@ class ProfilModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    // public function getPartialText(){
-    //     $query = $this->select('SUBSTRING(profil,1,300) AS paragraft_pertama')->where('id_profil',1)->get();
-
-    //     $result = $query->getRow();
-        
-    //     return $result ? $result->paragraf_pertama : null;
-    // }
-
+   public function getProfil(array $atribut){
+    $query = $this->select($atribut)->Get();
+    return $query->getResult();
+   }
 
 
 }

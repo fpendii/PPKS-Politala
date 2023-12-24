@@ -8,7 +8,7 @@
                             <div class="row">
                                 <div class="col col-14 badan-artikel">
                                     <div class="fw-bold">
-                                        <h4><?php echo $rowProgram['urain'] ?></h4>
+                                        <h4><?php echo $rowProgram['uraian'] ?></h4>
                                     </div>
                                     <p style="color: red;"><?php echo $rowProgram['lokasi'] ?>, <?php echo $rowProgram['waktu'] ?></p>
                                 </div>

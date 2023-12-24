@@ -36,6 +36,14 @@ class ArtikelModel extends Model
                 'required' => 'Isi artikel wajib diisi'
             ]
         ],
+        // 'gambar' => [
+        //     'rules' => 'max_size[gambar,2048]|mime_in[gambar,image/png,image/jpg,image/jpeg]|is_image[gambar]',
+        //     'errors' => [
+        //         'max_size' => 'Ukuran gambar minimal 2mb',
+        //         'mime_in' => 'Yang anda pilih bukan gambar',
+        //         'is_image' => 'Yang anda pilih bukan gambar'
+        //     ]
+        // ]
     ];
     protected $validationMessages   = [];
     protected $skipValidation       = false;

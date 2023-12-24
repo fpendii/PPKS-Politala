@@ -3,16 +3,19 @@
 <!-- LINK CSSS ^ -->
 
 <div class="container-fluid">
-    <div class="card text-center">
+    <div class="card">
         <div class="card-header">
             Galeri
         </div>
         <div class="card-body">
             <h5 class="card-title">Manajement Galeri</h5>
             <p class="card-text">Buatlah posting dengan galeri gambar untuk hari ini. Pastikan gambar yang diunggah relevan dan berkualitas. Terima kasih</p>
-            <a href="/manajement-galeri/tambah-gambar" class="btn btn-success">
-                Tambah
-            </a>
+            <div class="text-end">
+                <a href="/manajement-galeri/tambah-gambar" class="btn btn-success">
+                    Tambah
+                </a>
+            </div>
+
         </div>
         <div class="card-footer text-body-secondary">
             <?php if (session()->getFlashdata('pesan')) : ?>

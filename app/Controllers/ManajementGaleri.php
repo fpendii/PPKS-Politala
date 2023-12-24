@@ -9,7 +9,7 @@ use App\Models\GaleriModel;
 
 class ManajementGaleri extends BaseController
 {
-    
+
     protected $DataAlamat;
     protected $DataGaleri;
 
@@ -22,7 +22,7 @@ class ManajementGaleri extends BaseController
     public function ManajementGaleri()
     {
         $alamat = $this->DataAlamat->findAll();
-        $galeri = $this->DataGaleri->findAll();
+        $galeri = $this->DataGaleri->orderBy('id_galeri','DESC')->findAll();
 
         $data = [
             'judul' => 'PPKS POLITALA',
@@ -35,7 +35,8 @@ class ManajementGaleri extends BaseController
         echo view('layout/footer');
     }
 
-    public function TambahGambar(){
+    public function TambahGambar()
+    {
         $data = [
             'judul' => 'Tambah Gambar'
         ];
@@ -44,29 +45,42 @@ class ManajementGaleri extends BaseController
         echo view('layout/script');
     }
 
-    public function SimpanGaleri(){
+    public function SimpanGaleri()
+    {
 
         // Cek validasi
-        if(!$this->validate($this->DataGaleri->getValidationRules())){
-            session()->setFlashdata('errors' , $this->validator->listErrors());
+        if (!$this->validate($this->DataGaleri->getValidationRules())) {
+            session()->setFlashdata('errors', $this->validator->listErrors());
             return redirect()->to('/manajement-galeri/tambah-gambar')->withInput();
         }
 
+        // Ambil file gambar
+        $fileGambar = $this->request->getFile('gambar');
+        if ($fileGambar->getError() == 4) {
+            $namaGambar = 'default_galeri.png';
+        } else {
+            // Ambil nama random gambar
+            $namaGambar = $fileGambar->getRandomName();
+            $fileGambar->move('img', $namaGambar);
+        }
+
+
         $this->DataGaleri->save([
             'judul' => $this->request->getVar('judul'),
-            'gambar' => $this->request->getVar('gambar')
+            'gambar' => $namaGambar
         ]);
 
-        session()->setFlashdata('pesan','Data berhasil ditambahkan');
+        session()->setFlashdata('pesan', 'Data berhasil ditambahkan');
 
         return redirect()->to('/manajement-galeri');
     }
 
     // Function untuk mengapus Data Galeri
-    public function HapusGaleri($id){
+    public function HapusGaleri($id)
+    {
         $this->DataGaleri->delete($id);
 
-        session()->setFlashdata('pesan','Data Berhasil Dihapus');
+        session()->setFlashdata('pesan', 'Data Berhasil Dihapus');
 
         return redirect()->back();
     }

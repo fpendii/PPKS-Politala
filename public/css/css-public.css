@@ -99,6 +99,10 @@ li {
 
 .badan-artikel {
   text-align: left;
+  height: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .list-program {

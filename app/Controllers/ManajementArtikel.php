@@ -64,16 +64,28 @@ class ManajementArtikel extends BaseController
     // Function Untuk Menyimpan Artikel
     public function SimpanArtikel()
     {
+        
         // Cek Validasi
         if (!$this->validate($this->DataArtikel->getValidationRules())) {
             session()->setFlashdata('errors', $this->validator->listErrors());
             return redirect()->back()->withInput();
         }
+        // Mengambil gambar
+        $fileGambar  = $this->request->getFile('gambar');
+        // Cek apakah gambar diapload atau tida
+        if($fileGambar->getError() == 4){
+            $namaFile = 'default_artikel.jpg';
+        }else{
+            // Membuat nama random gambar
+            $namaFile = $fileGambar->getRandomName();
+            $fileGambar->move('img',$namaFile);
+        }
+        
 
         $this->DataArtikel->save([
             'judul' => $this->request->getVar('judul'),
-            'isi_artikel' => $this->request->getVar('isi_artikel'),
-            'gambar' => $this->request->getVar('gambar')
+            'gambar' => $namaFile,
+            'isi_artikel' => $this->request->getVar('isi_artikel')
         ]);
 
         session()->setFlashdata('pesan', 'Data Berhasil Ditambahkan');
@@ -84,6 +96,14 @@ class ManajementArtikel extends BaseController
     // Function untuk menghapus artikel
     public function HapusArtikel($id)
     {
+        // Cari gambar berdasarkan id
+        $artikel = $this->DataArtikel->find($id);
+        // Jika jika file gambarnya default
+        if($artikel['gambar'] != 'default_artikel.jpg'){
+            // Hapus gambar
+            unlink('img/'.$artikel['gambar']);
+        }
+        
 
         $this->DataArtikel->delete($id);
 
@@ -108,16 +128,29 @@ class ManajementArtikel extends BaseController
     // Function untuk menyimpan hasil perubahan
     public function UpdatedArtikel($id)
     {
+        
         // Cek Validasi
         if (!$this->validate($this->DataArtikel->getValidationRules())) {
             session()->setFlashdata('errors', $this->validator->listErrors());
             return redirect()->back()->withInput();
         }
+
+        $fileGambar = $this->request->getFile('gambar');
+        // Cek apakah gambar dirubah
+        if($fileGambar->getError() == 4){
+            $namaGambar = $this->request->getVar('gambar_lama');
+        } else {
+            $namaGambar = $fileGambar->getRandomName();
+            $fileGambar->move('img',$namaGambar);
+            // Hapus file lama
+            unlink('img/'.$this->request->getVar('gambar_lama'));
+        }
+
         $this->DataArtikel->save([
             'id_artikel' => $id,
             'judul' => $this->request->getVar('judul'),
-            'isi_artikel' => $this->request->getVar('artikel'),
-            'gambar' => $this->request->getVar('gambar')
+            'isi_artikel' => $this->request->getVar('isi_artikel'),
+            'gambar' => $namaGambar
         ]);
 
         session()->setFlashdata('pesan', 'Data Berhasil Diubah');

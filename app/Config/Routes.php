@@ -18,7 +18,7 @@ $routes->get('/tracking laporan', 'Pages::trackingLaporan');
 $routes->get('/laporkan', 'Pages::laporkan');
 $routes->get('/galeri photo', 'Galeri::galeri');
 $routes->get('/pengantar', 'Profil::pengantar');
-$routes->get('/struktur', 'Pages::strukturOrganisasi');
+$routes->get('/struktur', 'StrukturOrganisasi::strukturOrganisasi');
 $routes->get('/sop', 'Pages::sop');
 $routes->get('/login', 'Login::login');
 $routes->post('/login/verifikasi-login', 'Login::verifikasiLogin');
@@ -40,7 +40,7 @@ $routes->post('manajement-artikel/edit/update/(:num)','ManajementArtikel::Update
 // Admin/Manajement Profil
 $routes->get('/manajement-profil', 'ManajementProfil::ManajementProfil',['filter' => 'isAdmin']);
 $routes->get('/manajement-profil/edit/(:segment)','ManajementProfil::EditProfil/$1',['filter' => 'isAdmin']);
-$routes->post('manajement-profil/edit/simpan-profil/(:segment)', 'ManajementProfil::SimpanProfil/$1',['filter' => 'isAdmin']);
+$routes->post('manajement-profil/simpan-profil', 'ManajementProfil::SimpanProfil/$1',['filter' => 'isAdmin']);
 // Admin/Manajament Galeri
 $routes->get('/manajement-galeri', 'ManajementGaleri::ManajementGaleri',['filter' => 'isAdmin']);
 $routes->get('/manajement-galeri/tambah-gambar', 'ManajementGaleri::TambahGambar',['filter' => 'isAdmin']);

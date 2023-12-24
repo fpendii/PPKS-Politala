@@ -1,13 +1,16 @@
 <div class="container-fluid border pb-4">
-    <div class="card text-center mb-5">
+    <div class="card text-start mb-5">
         <div class="card-header">
             Halaman
         </div>
         <div class="card-body">
             <h5 class="card-title">Manajament Artikel</h5>
             <p class="card-text">Tulislah sebuah artikel yang informatif dan menarik untuk hari ini, berikan wawasan dan informasi yang bermanfaat kepada pembaca</p>
-            <a href="<?= base_url('/tambah-artikel') ?>" class="btn btn-success">Tambah Artikel</a>
-    </div>
+            <div class="text-end">
+                <a href="<?= base_url('/tambah-artikel') ?>" class="btn btn-success">Tambah Artikel</a>
+            </div>
+
+        </div>
         <div class="card-footer text-body-secondary">
             <?php if (session()->getFlashdata('pesan')) : ?>
                 <div class="alert alert-primary" role="alert">
@@ -55,7 +58,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <form action="manajement-artikel/edit/<?php echo $rowArtikel['id_artikel'] ?>" method="post" >
+                                <form action="manajement-artikel/edit/<?php echo $rowArtikel['id_artikel'] ?>" method="post">
                                     <button type="submit" class="btn btn-warning">Edit</button>
                                 </form>
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

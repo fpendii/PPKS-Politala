@@ -10,7 +10,7 @@
                         <div class="ms-2 me-auto">
                             <div class="container text-center">
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-4">
                                         <img width="200px" src="/img/<?php echo $RowArtikel['gambar'] ?>" class="img-thumbnail" alt="...">
                                     </div>
                                     <div class="col col-8 badan-artikel">
@@ -20,7 +20,7 @@
                                 </div>
                             </div>
                         </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
+                        <span class="badge bg-primary rounded-pill"><?php echo $RowArtikel['tanggal_dibuat'] ?></span>
                     </li>
                 </button>
                 </a>

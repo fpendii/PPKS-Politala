@@ -29,13 +29,18 @@ class Login extends BaseController
         if($user){
             // Login berhasil/Data ditemukan
             // Set sesi session
-            $data = [
-                'username' => $user['username'],
-                'level' => $user['level'],
-                'isLoggin' => true
-            ];
-            session()->set($data);
+            // $data = [
+            //     'username' => $user['username'],
+            //     'level' => $user['level'],
+            //     'isLoggin' => true
+            // ];
+            // session()->set($data);
 
+            $session = session();
+            $session->set('username',$user['username']);
+            $session->set('level',$user['level']);
+
+            
             // Mengarahkan pengguna sesuai level
             if($user['level'] === 'admin'){
                 return redirect()->to('/beranda-admin');

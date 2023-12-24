@@ -31,7 +31,7 @@ class ManajementProfil extends BaseController
 
     public function EditProfil($kategori)
     {
-        
+
         $profil = ($this->DataProfil->findAll());
 
         $data = [
@@ -44,52 +44,40 @@ class ManajementProfil extends BaseController
         echo view('pages/form/editProfil');
     }
 
-    public function SimpanProfil($kategori)
+    public function SimpanProfil()
     {
-        if($kategori === 'alamat'){
-            $this->DataProfil->save([
-                'id_profil' => 1,
-                'alamat' => $this->request->getVar('alamat')
-            ]);
-        } elseif($kategori === 'no_handphone'){
-            if(!$this->validate($this->DataProfil->getValidationRules())){
-                session()->setFlashdata('errors', $this->validator->listErrors());
-                return redirect()->to('manajement-profil/edit/no_handphone');
-            }
-            $data = [
-                'no_handphone' => $this->request->getVar('no_handphone')
-            ];
-            $this->DataProfil->save([
-                'id_profil' => 1,
-                'no_handphone' => $this->request->getVar('no_handphone')
-            ]);
-        } elseif($kategori === 'email'){
-            $this->DataProfil->save([
-                'id_profil' => 1,
-                'email' => $this->request->getVar('email')
-            ]);
-        } elseif($kategori === 'tujuan'){
-            $this->DataProfil->save([
-                'id_profil' => 1,
-                'tujuan' => $this->request->getVar('tujuan')
-            ]);
-        } elseif($kategori === 'visi'){
-            if(!$this->validate($this->DataProfil->getValidationRules())){
-                session()->setFlashdata('errors', $this->validator->listErrors());
-                return redirect()->to('manajement-profil/edit/visi');
-            }
-            $this->DataProfil->save([
-                'id_profil' => 1,
-                'visi' => $this->request->getVar('visi')
-            ]);
-        } else {
-            $this->DataProfil->save([
-                'id_profil' => 1,
-                'misi' => $this->request->getVar('misi')
-            ]);
+        // Cek Validasi
+        if (!$this->validate($this->DataProfil->getValidationRules())) {
+            session()->setFlashdata('errors', $this->validator->listErrors());
+            return redirect()->back()->withInput();
         }
-        
-        session('pesan', 'Data Berhasil Dirubah');
+
+        // Ambil file gambar
+        $fileGambar = $this->request->getFile('gambar');
+        // Cek Apakah gambar dirubah
+        if ($fileGambar->getError() == 4) {
+            $namaGambar = $this->request->getVar('gambar_lama');
+        } else {
+            // Ambil nama file gambar
+            $namaGambar = $fileGambar->getRandomName();
+            $fileGambar->move('img', $namaGambar);
+            // Hapus File lama
+            unlink('img/'.$this->request->getVar('gambar_lama'));
+        }
+
+
+
+        $this->DataProfil->save([
+            'id_profil' => $this->request->getVar('id_profil'),
+            'visi' => $this->request->getVar('visi'),
+            'misi' => $this->request->getVar('misi'),
+            'tujuan' => $this->request->getVar('tujuan'),
+            'no_handphone' => $this->request->getVar('no_handphone'),
+            'email' => $this->request->getVar('email'),
+            'struktur_organisasi' => $namaGambar
+        ]);
+
+        session()->setFlashdata('pesan', 'Data Berhasil Dirubah');
 
         return redirect()->to('/manajement-profil');
     }

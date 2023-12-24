@@ -6,7 +6,7 @@
                     <div class="col">
                         <div class="card text-start" style="width: 30rem;">
                             <div class="card-body">
-                                <h5 class="card-title">Selamat datang, Admin!</h5>
+                                <h5 class="card-title">Selamat datang, <?php if(session()->get('username')){echo session()->get('username');} ?>!</h5>
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Beranda Admin</h6>
                                 <p class="card-text">
 

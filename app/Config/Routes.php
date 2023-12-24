@@ -11,7 +11,7 @@ $routes->get('/', 'BerandaController::beranda');
 $routes->get('/beranda', 'BerandaController::beranda');
 $routes->get('/admin', 'Pages::mPengaduan');
 $routes->get('/artikel', 'Artikel::artikel');
-$routes->get('/artikel/(:segment)', 'Artikel::detailArtikel/$1');
+$routes->get('/artikel/detail/(:segment)', 'Artikel::detailArtikel/$1');
 $routes->get('/profil', 'Pages::profil');
 $routes->get('/program', 'ProgramController::program');
 $routes->get('/tracking laporan', 'Pages::trackingLaporan');
@@ -70,7 +70,8 @@ $routes->delete('manajement-program/delete/(:num)','ManajementProgram::DeletePro
 
 // ROUTES PEGAWAI
 $routes->get('/pegawai', 'BerandaPegawaiController::LaporanPengguna');
-$routes->get('/Galeri Pegawai', 'Pages::galeriPegawai');
+$routes->get('/pegawai/manajement-pengaduan', 'BerandaPegawaiController::LaporanPengguna');
+$routes->get('pegawai/galeri-photo', 'Galeri::galeri');
 $routes->get('/laporan pengguna', 'Pages::laporanPengguna');
 $routes->get('/Artikel pegawai', 'Pages::artikelPegawai');
 $routes->get('/Pengaduan pegawai', 'Pages::pengaduanPegawai');

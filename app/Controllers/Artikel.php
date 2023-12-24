@@ -11,12 +11,15 @@ class Artikel extends BaseController
     protected $DataArtikel;
     protected $DataAlamat;
 
-    public function __construct(){
+    public function __construct()
+    {
         $this->DataArtikel = new ArtikelModel();
         $this->DataAlamat = new ProfilModel();
     }
 
-    public function artikel(){
+    public function artikel()
+    {
+        $hakAkses = session()->get('level');
         $artikel = $this->DataArtikel->getArtikel();
         $alamat = $this->DataAlamat->findAll();
 
@@ -25,14 +28,19 @@ class Artikel extends BaseController
             "artikel" => $artikel,
             "alamat" => $alamat
         ];
-
-        echo view('layout/header-user', $data);
-        echo view('layout/banner');
-        echo view("pages/User/artikel");
-        echo view('layout/footer');
+        if ($hakAkses == null) {
+            echo view('layout/header-user', $data);
+            echo view("pages/User/artikel");
+            echo view('layout/footer');
+        } elseif($hakAkses == 'pegawai'){
+            echo view('layout/header-pegawai', $data);
+            echo view("pages/User/artikel");
+        }
     }
 
-    public function detailArtikel($id){
+    public function detailArtikel($id)
+    {
+        $hakAkses = session()->get('level');
         $artikel = $this->DataArtikel->getArtikel($id);
         $alamat = $this->DataAlamat->findAll();
 
@@ -41,10 +49,13 @@ class Artikel extends BaseController
             'artikel' => $artikel,
             "alamat" => $alamat
         ];
-
-        echo view('layout/header-user', $data);
-        echo view('layout/banner');
-        echo view("pages/User/detailArtikel");
-        echo view('layout/footer');
+        if ($hakAkses == null) {
+            echo view('layout/header-user', $data);
+            echo view("pages/User/detailArtikel");
+            echo view('layout/footer');
+        } elseif($hakAkses == 'pegawai'){
+            echo view('layout/header-pegawai', $data);
+            echo view("pages/User/detailArtikel");
+        }
     }
 }

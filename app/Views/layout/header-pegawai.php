@@ -27,20 +27,20 @@
                             </svg></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="manajement pengaduan">Laporan Pengguna</a>
+                        <a class="nav-link active" aria-current="page" href="<?php base_url('/pegawai/manajement-pengaduan') ?>">Laporan Pengguna</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Galeri Pegawai">Galeri</a>
+                        <a class="nav-link active" aria-current="page" href="<?= base_url('galeri photo') ?>">Galeri</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Artikel pegawai">Artikel</a>
+                        <a class="nav-link active" aria-current="page" href="<?= base_url('artikel') ?>">Artikel</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="Pengaduan pegawai">Pengaduan</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <button class="btn btn-outline-primary" type="submit">Account</button>
+                    <a href="<?= base_url('logout') ?>" class="btn btn-outline-primary">Logout</a>
                 </form>
             </div>
         </div>

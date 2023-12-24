@@ -1,44 +1,50 @@
     <!-- Link Css -->
     <link rel="stylesheet" href="/css/ArtikelStyle.css">
-    
-    <div class="container-fluid">
-        <ol class="list-group list-group-numbered" style="witdh : 800px;">
-            <?php foreach ($artikel as $RowArtikel) : ?>
-                <a href="/artikel/<?php echo $RowArtikel['id_artikel'] ?>">
-                <button class="buttonArtikel">
-                    <li class="Artikel list-group-item d-flex justify-content-between align-items-start">
-                        <div class="ms-2 me-auto">
-                            <div class="container text-center">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img width="200px" src="/img/<?php echo $RowArtikel['gambar'] ?>" class="img-thumbnail" alt="...">
-                                    </div>
-                                    <div class="col col-8 badan-artikel">
-                                        <div class="fw-bold"><?php echo $RowArtikel['judul'] ?></div>
-                                        <p><?php echo $RowArtikel['isi_artikel'] ?></p>
+
+    <div class="container-xll">
+        <div class="container-xll">
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-10">
+                        <?php foreach($artikel as $RowArtikel): ?>
+                        <div class="row mb-3">
+                            <a href="artikel/detail/<?php echo $RowArtikel['id_artikel'] ?>">
+                            <div class="col">
+                                <div class="card" style="width: 60rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Artikel</h5>
+                                        <img src="/img/<?php echo $RowArtikel['gambar'] ?>" class="img-thumbnail" width="200px" alt="...">
+                                        <h6 class="card-subtitle mb-2 text-muted mt-2"><?php echo $RowArtikel['tanggal_dibuat'] ?></h6>
+                                        <p class="card-text"><?php echo $RowArtikel['judul'] ?></p>
+                                        <a href="artikel/detail/<?php echo $RowArtikel['id_artikel'] ?>" class="card-link">Lihat selengkapnya</a>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </div>
-                        <span class="badge bg-primary rounded-pill"><?php echo $RowArtikel['tanggal_dibuat'] ?></span>
-                    </li>
-                </button>
-                </a>
-            <?php endforeach; ?>
-        </ol>
+                        <?php endforeach ?>
+                    </div>
+                    <div class="col">
+                        Column
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- Pagition -->
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                    <a class="page-link">Previous</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                </li>
-            </ul>
-        </nav>
+
+    <!-- Pagition -->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
     </div>

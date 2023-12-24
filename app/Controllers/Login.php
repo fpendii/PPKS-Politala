@@ -27,14 +27,6 @@ class Login extends BaseController
         $user = $this->DataUser->where('username', $username)->where('password', $password)->first();
 
         if($user){
-            // Login berhasil/Data ditemukan
-            // Set sesi session
-            // $data = [
-            //     'username' => $user['username'],
-            //     'level' => $user['level'],
-            //     'isLoggin' => true
-            // ];
-            // session()->set($data);
 
             $session = session();
             $session->set('username',$user['username']);

@@ -1,11 +1,14 @@
 <div class="container-fluid border pb-4">
-    <div class="card text-center mb-5">
+    <div class="card text-start mb-5">
         <div class="card-header">
             Halaman
         </div>
         <div class="card-body">
             <h5 class="card-title">Manajament Materi</h5>
-            <a href="/manajement-materi/tambah-materi" class="btn btn-success">Tambah Materi</a>
+            <div class="text-end">
+                <a href="/manajement-materi/tambah-materi" class="btn btn-success">Tambah Materi</a>
+            </div>
+
         </div>
         <div class="card-footer text-body-secondary">
             <?php if (session()->getFlashdata('pesan')) : ?>

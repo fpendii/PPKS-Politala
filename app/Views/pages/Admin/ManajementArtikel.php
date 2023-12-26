@@ -9,7 +9,6 @@
             <div class="text-end">
                 <a href="<?= base_url('/tambah-artikel') ?>" class="btn btn-success">Tambah Artikel</a>
             </div>
-
         </div>
         <div class="card-footer text-body-secondary">
             <?php if (session()->getFlashdata('pesan')) : ?>
@@ -71,4 +70,5 @@
         </div>
         <!-- </a> -->
     <?php endforeach; ?>
+    <?= $pager->links('artikel','artikel_pagination') ?>
 </div>

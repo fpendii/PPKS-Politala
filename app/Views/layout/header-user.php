@@ -24,39 +24,39 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" id="navBeranda" aria-current="page" href="/">Beranda</a>
+                <a class="nav-link active" id="navBeranda" aria-current="page" href="<?= base_url('/') ?>">Beranda</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="profil" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Profil
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/pengantar">Pengantar</a></li>
-                  <li><a class="dropdown-item" href="/struktur">Struktur Organisasi</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('/pengantar') ?>">Pengantar</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('/struktur') ?>">Struktur Organisasi</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="/sop">SOP</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('/sop') ?>">SOP</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('/artikel') ?>">Artikel</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="program">Program</a>
+                <a class="nav-link" href="<?= base_url('program') ?>">Program</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="laporkan">Laporkan</a>
+                <a class="nav-link" href="<?= base_url('laporkan') ?>">Laporkan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="tracking laporan">Tracking</a>
+                <a class="nav-link" href="<?= base_url('tracking laporan') ?>tracking laporan">Tracking</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="galeri photo">Galeri</a>
+                <a class="nav-link" href="<?= base_url('/galeri photo') ?>">Galeri</a>
               </li>
             </ul>
             <form class="d-flex">
-              <a class="nav-link" href="login">Login</a>
+              <a class="nav-link" href="<?= base_url('login') ?>">Login</a>
             </form>
 
           </div>

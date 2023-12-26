@@ -20,13 +20,14 @@ class Artikel extends BaseController
     public function artikel()
     {
         $hakAkses = session()->get('level');
-        $artikel = $this->DataArtikel->getArtikel();
+        $artikel = $this->DataArtikel->paginate(5,'artikel');
         $alamat = $this->DataAlamat->findAll();
 
         $data = [
             "judul" => "Artikel PPKS Politala",
             "artikel" => $artikel,
-            "alamat" => $alamat
+            "alamat" => $alamat,
+            'pager' =>$this->DataArtikel->pager
         ];
         if ($hakAkses == null) {
             echo view('layout/header-user', $data);

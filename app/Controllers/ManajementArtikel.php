@@ -20,12 +20,13 @@ class ManajementArtikel extends BaseController
     public function MajanementArtikel()
     {
         $alamat = $this->DataAlamat->findAll();
-        $artikel = $this->DataArtikel->orderBy('id_artikel', 'DESC')->findAll();
+        $artikel = $this->DataArtikel->orderBy('id_artikel', 'DESC')->paginate(10, 'artikel');
 
         $data = [
             'judul' => 'PPKS POLITALA',
             'alamat' => $alamat,
-            'artikel' => $artikel
+            'artikel' => $artikel,
+            'pager' => $this->DataArtikel->pager
         ];
 
         echo view('layout/header-admin', $data);

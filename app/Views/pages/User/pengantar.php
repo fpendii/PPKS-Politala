@@ -5,7 +5,7 @@
     <div class="container text-start">
         <div class="row">
             <div class="col-sm-4">
-                Gambar
+                <img src="/img/illustrasi2.png" class="img-fluid" alt="...">
             </div>
             <div class="col-sm-8">
                 <h5>
@@ -29,7 +29,7 @@
                 <hr>
                 <h5>Visi : </h5>
                 <p class="paragraph">
-                <?php echo $alamat[0]['visi'] ?>
+                    <?php echo $alamat[0]['visi'] ?>
                 </p>
                 <h5>Misi : </h5>
                 <?php echo $alamat[0]['misi'] ?>

@@ -78,4 +78,5 @@
             <?php endforeach; ?>
         </tbody>
     </table>
+    <?php echo $pager->links('galeri','artikel_pagination'); ?>
 </div>

@@ -22,12 +22,13 @@ class ManajementGaleri extends BaseController
     public function ManajementGaleri()
     {
         $alamat = $this->DataAlamat->findAll();
-        $galeri = $this->DataGaleri->orderBy('id_galeri','DESC')->findAll();
+        $galeri = $this->DataGaleri->orderBy('id_galeri','DESC')->paginate(5,'galeri');
 
         $data = [
             'judul' => 'PPKS POLITALA',
             'alamat' => $alamat,
-            'galeri' => $galeri
+            'galeri' => $galeri,
+            'pager' => $this->DataGaleri->pager
         ];
 
         echo view('layout/header-admin', $data);

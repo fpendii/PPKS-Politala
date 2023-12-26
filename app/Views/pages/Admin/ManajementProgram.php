@@ -1,15 +1,15 @@
 <div class="container-fluid border pb-4">
-    <div class="card text-center mb-5">
+    <div class="card text-start mb-5">
         <div class="card-header">
             Halaman
         </div>
         <div class="card-body">
             <h5 class="card-title">Manajement Program</h5>
-            
-            <a href="/manajement-program/tambah-program" class="btn btn-success">
-                Tambah Program
-            </a>
-            
+            <div class="text-end">
+                <a href="/manajement-program/tambah-program" class="btn btn-success">
+                    Tambah Program
+                </a>
+            </div>
         </div>
         <div class="card-footer text-body-secondary">
             <?php if (session()->getFlashdata('pesan')) : ?>

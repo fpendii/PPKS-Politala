@@ -28,16 +28,17 @@
         </div>
         <div class="container text-center">
             <div class="row">
-                <div class="col order-last">
-                    
-                </div>
                 <div class="col">
                     <div class="container text-center">
                         <div class="row">
-                            <div class="kotak-materi"><?php echo $materi[0]['judul_materi'] ?></div>
-                        </div>
-                        <div class="row">
-                            <div class="kotak-materi"><?php echo $materi[1]['judul_materi'] ?></div>
+                            <div class="col">
+                                <div class="kotak-materi shadow p-3 mb-5 rounded">
+                                    <?php echo $materi[0]['judul_materi'] ?>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="kotak-materi shadow p-3 mb-5 rounded"><?php echo $materi[1]['judul_materi'] ?></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -87,4 +88,3 @@
         </div>
     </div>
 </div>
-
